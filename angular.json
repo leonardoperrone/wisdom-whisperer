@@ -19,16 +19,7 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              {
-                "glob": "package.json",
-                "input": "",
-                "output": "/assets"
-              },
-              {
-                "glob": "pictures.json",
-                "input": "src",
-                "output": "/assets"
-              }
+              "src/404.html"
             ],
             "styles": [
               {
