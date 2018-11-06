@@ -1,0 +1,29 @@
+// import {app} from 'firebase';
+//
+// let express = require('express');
+// let rp = require('request-promise');
+// let cors = require('cors')
+//
+// app.use(cors());
+//
+// const secret = '6Ld45HcUAAAAAPeGqSqPQMdepOhP47Vxm_ERatH3';
+//
+// app.get('/validate_captcha', (req, res) => {
+//
+//   const options = {
+//     method: 'POST',
+//     uri: 'https://www.google.com/recaptcha/api/siteverify',
+//     qs: {
+//       secret,
+//       response: req.query.token
+//     },
+//     json: true
+//   };
+//
+//   rp(options)
+//     .then(response => res.json(response))
+//     .catch(() => {});
+//
+// });
+//
+// module.exports = app;

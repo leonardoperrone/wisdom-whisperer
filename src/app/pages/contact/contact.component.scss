@@ -1,0 +1,37 @@
+// redundant to be replaced in the future
+.header {
+  padding: 65px 34px;
+}
+
+.header .title {
+  text-align: center;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 42px;
+}
+
+.contact-form-container {
+  color: #fff;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  .form-field {
+    margin-bottom: 30px;
+  }
+  .form-control-name, .form-control-email {
+    width: 50%;
+    padding: 12px 20px;
+  }
+  .form-control-message {
+    height: 200px;
+  }
+}
+
+.alert {
+  width: 50%;
+}
+
+
+

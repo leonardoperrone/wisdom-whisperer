@@ -1,0 +1,15 @@
+body {
+  background: #1f1f1f; }
+
+.container {
+  max-width: 100%;
+  padding: 0;
+  margin-top: 100px; }
+
+.navbar-nav .nav-link {
+  margin-right: 24px;
+  color: #fff; }
+  .navbar-nav .nav-link:hover {
+    opacity: 0.8; }
+
+/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,21 @@
+<nav id="mynav" class="navbar fixed-top navbar-dark bg-main navbar-expand-lg">
+  <a class="navbar-brand" routerLink="home">
+    <img src="../assets/logo-white.svg" width="50" height="50" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="home">{{'Home' | uppercase}}</a>
+      <a class="nav-item nav-link" routerLink="contact">{{'Contact' | uppercase}}</a>
+      <a class="nav-item nav-link" routerLink="about">{{'About' | uppercase}}</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>

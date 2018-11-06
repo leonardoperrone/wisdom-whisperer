@@ -1,0 +1,59 @@
+<div class="header">
+  <h2 class="title"> Contact</h2>
+</div>
+
+<div class="contact-form-container">
+  <div class="contact-form">
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+
+        <div class="form-field">
+
+          <label>Name:</label>
+          <input class="form-control form-control-name" formControlName="name" name="name" type="text">
+          <div
+            *ngIf="contactForm.controls['name'].invalid && (contactForm.controls['name'].dirty || contactForm.controls['name'].touched)"
+            class="alert alert-danger alert-error-name">
+            <div *ngIf="contactForm.controls['name'].errors.required">
+              Name is required.
+            </div>
+            <div *ngIf="contactForm.controls['name'].errors.maxlength">
+              Max characters: 30.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field">
+
+          <label>Email:</label>
+          <input class="form-control form-control-email" formControlName="email" name="email">
+          <div
+            *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)"
+            class="alert alert-danger alert-error-name">
+            <div *ngIf="contactForm.controls['email'].errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="contactForm.controls['email'].errors.email">
+              Please enter a valid email.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field">
+
+          <label>Message:</label>
+          <textarea class="form-control form-control-message" formControlName="message"></textarea>
+        </div>
+
+      </div>
+
+      <!--<div class="g-recaptcha" data-sitekey="6Ld45HcUAAAAAEo7eAGAlJ6L4UEqFToE3Wpth4zC"></div>-->
+
+      <button type="submit" [disabled]="contactForm.pristine || contactForm.invalid" class="btn btn-success">Send
+        Email
+      </button>
+
+    </form>
+  </div>
+</div>
