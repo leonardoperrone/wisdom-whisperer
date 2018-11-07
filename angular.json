@@ -87,12 +87,12 @@
               {
                 "glob": "package.json",
                 "input": "",
-                "output": "/assets"
+                "output": "src/assets"
               },
               {
                 "glob": "pictures.json",
                 "input": "src",
-                "output": "/assets"
+                "output": "src/assets"
               }
             ]
           }
