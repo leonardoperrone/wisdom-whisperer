@@ -39,6 +39,8 @@ mat-progress-spinner {
 
 .grid-main {
   grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 20px;
+  margin: 0 100px;
   //grid-auto-flow: row dense;
 }
 
@@ -69,6 +71,14 @@ mat-progress-spinner {
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+  line-height: 0.9;
+  &:after {
+    border-bottom: 1px solid #fff;
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 70%; /* Change this to whatever width you want. */
+  }
   &:hover {
     opacity: 0.8;
   }
