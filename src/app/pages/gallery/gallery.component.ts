@@ -1,9 +1,8 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AngularFireStorage} from 'angularfire2/storage';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import {Image} from '../../models/image.model';
-import {ModalService} from '../../../services/modal.service';
 
 @Component({
     selector: 'app-gallery',
@@ -42,26 +41,48 @@ export class GalleryComponent implements OnInit {
                 this.countrySelected(c);
             } else {
                 this.selectedCountry = 'TRAVELS';
-                this.countriesMock.map((country) => {
-                    const url = 'assets/images/banners/' + country + '.jpg';
-                    this.selectedCountryPics.push({name: country, url: url});
-                    if (this.selectedCountryPics.length === 10) {
-                        this.loaded = true;
-                    }
-                });
-                // this.countriesMock.map((country, idx) => {
+                this.selectedCountryPics = [];
+                // this.countriesMock.map((country) => {
+                //     const url = 'assets/images/banners/' + country + '.jpg';
+                //     this.selectedCountryPics.push({name: country, url: url});
+                //     // if (this.selectedCountryPics.length === 10) {
+                //     // }
+                // });
+                // this.loaded = true;
+                //
+                // this.countriesMock.forEach((country, idx) => {
                 //     if (this.dbStorage.storage.ref().child('banners/' + country + '.jpg')) {
                 //         const imageStorageRef = this.dbStorage.storage.ref().child('banners/' + country + '.jpg');
                 //         imageStorageRef.getDownloadURL().then(url => {
-                //             console.log('url', this.selectedCountryPics.length);
+                //             console.log('url', url);
+                //             console.log('country', country);
                 //             this.selectedCountryPics.push({index: idx, name: country, url: url});
                 //
                 //             if (this.selectedCountryPics.length === 9) {
-                //                 this.loaded = true;
+                //
                 //             }
                 //         });
                 //     }
                 // });
+
+                const promises = this.countriesMock.map((country, idx) => {
+                    if (this.dbStorage.storage.ref().child('banners/' + country + '.jpg')) {
+                        const imageStorageRef = this.dbStorage.storage.ref().child('banners/' + country + '.jpg');
+                        return imageStorageRef.getDownloadURL().then(url => {
+                            return {index: idx, name: country, url: url};
+                            // this.selectedCountryPics.push({index: idx, name: country, url: url});
+                        });
+                    }
+                });
+
+                Promise.all(promises).then((results) => {
+                    this.selectedCountryPics = results;
+                    this.loaded = true;
+                    console.log('loaded', this.loaded);
+                    console.log('loaded', results);
+                });
+
+
             }
         });
     }
@@ -72,17 +93,21 @@ export class GalleryComponent implements OnInit {
         this.selectedCountry = country;
         this.loaded = false;
 
-        for (let i = 0; i < 10; i++) {
+        const promises = this.countriesMock.map((el, i) => {
             if (this.dbStorage.storage.ref().child(country + '/' + (i + 1) + '.jpg')) {
                 const imageStorageRef = this.dbStorage.storage.ref().child(country + '/' + (i + 1).toString() + '.jpg');
-                imageStorageRef.getDownloadURL().then(url => {
-                    this.selectedCountryPics.push({index: i, name: country, url: url});
-                    if (this.selectedCountryPics.length === 10) {
-                        this.loaded = true;
-                    }
+               return imageStorageRef.getDownloadURL().then(url => {
+                    return {index: i, name: country, url: url};
+                    // if (this.selectedCountryPics.length === 10) {
+                    //     this.loaded = true;
+                    // }
                 });
             }
-        }
+        });
+        Promise.all(promises).then((results) => {
+            this.selectedCountryPics = results;
+            this.loaded = true;
+        });
     }
 
     // openImageModal(content, image: Image) {

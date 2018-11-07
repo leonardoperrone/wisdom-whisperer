@@ -1,5 +1,5 @@
 <div class="header">
-  <h2 class="title"> {{selectedCountry}}</h2>
+  <h2 class="title"> {{selectedCountry | uppercase}}</h2>
 </div>
 
 <div [ngClass]="selectedCountry==='TRAVELS' ? 'grid-main' : 'grid-pic-gallery'">
