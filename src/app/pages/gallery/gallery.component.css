@@ -15,8 +15,8 @@ mat-progress-spinner {
 .header .title {
   text-align: center;
   color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
   letter-spacing: 5px;
   font-size: 42px; }
 
@@ -48,7 +48,8 @@ mat-progress-spinner {
   text-align: center;
   color: #fff;
   font-size: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
   letter-spacing: 5px; }
   .column img {
     width: 100%; }
