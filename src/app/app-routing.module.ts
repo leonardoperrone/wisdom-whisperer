@@ -1,9 +1,10 @@
-import {ModuleWithProviders} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {GalleryComponent} from './pages/gallery/gallery.component';
 import {AboutComponent} from './pages/about/about.component';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 import {ContactComponent} from './pages/contact/contact.component';
+import {CommonModule} from '@angular/common';
 
 
 const routes: Routes = [
@@ -32,4 +33,12 @@ const routes: Routes = [
   }
 ];
 
-export const MyRoutes: ModuleWithProviders = RouterModule.forRoot(routes);
+// export const MyRoutes: ModuleWithProviders = RouterModule.forRoot(routes);
+
+@NgModule({
+    imports: [CommonModule, RouterModule.forRoot(routes, { useHash: true })],
+    exports: [RouterModule],
+})
+
+export class AppRoutingModule {
+}

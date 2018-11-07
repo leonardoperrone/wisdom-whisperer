@@ -7,7 +7,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
-import {MyRoutes} from './app-routing.module';
 import {Gallery1Service} from '../services/gallery1.service';
 import {environment} from '../environments/environment';
 import {AngularFireStorageModule} from 'angularfire2/storage';
@@ -26,39 +25,38 @@ import {ModalComponent} from './common/modal';
 import {ModalService} from '../services/modal.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    GalleryComponent,
-    HomeComponent,
-    AboutComponent,
-    LoaderComponent,
-    PageNotFoundComponent,
-    ContactComponent,
-    ModalComponent
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule,
-    MyRoutes,
-    HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
-    AngularFireStorageModule,
-    AngularFireAuthModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatProgressSpinnerModule,
-    NgbModule.forRoot(),
-    FormsModule,
-    ReactiveFormsModule,
-    ToastrModule.forRoot(),
-  ],
-  providers: [
-    Gallery1Service,
-    ModalService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        GalleryComponent,
+        HomeComponent,
+        AboutComponent,
+        LoaderComponent,
+        PageNotFoundComponent,
+        ContactComponent,
+        ModalComponent,
+    ],
+    imports: [
+        BrowserModule,
+        RouterModule,
+        HttpClientModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireDatabaseModule,
+        AngularFireStorageModule,
+        AngularFireAuthModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatProgressSpinnerModule,
+        NgbModule.forRoot(),
+        FormsModule,
+        ReactiveFormsModule,
+        ToastrModule.forRoot(),
+    ],
+    providers: [
+        Gallery1Service,
+        ModalService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }
