@@ -23,6 +23,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ToastrModule} from 'ngx-toastr';
 import {ModalComponent} from './common/modal';
 import {ModalService} from '../services/modal.service';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
     declarations: [
@@ -38,6 +39,7 @@ import {ModalService} from '../services/modal.service';
     imports: [
         BrowserModule,
         RouterModule,
+        AppRoutingModule,
         HttpClientModule,
         AngularFireModule.initializeApp(environment.firebase),
         AngularFireDatabaseModule,
