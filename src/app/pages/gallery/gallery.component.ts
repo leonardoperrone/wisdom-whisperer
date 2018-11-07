@@ -19,7 +19,8 @@ export class GalleryComponent implements OnInit {
     public imageModal: Image;
     public imageModalUrl: string;
 
-    constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage, private route: ActivatedRoute, private router: Router, private modalService: ModalService) {
+    constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage,
+                private route: ActivatedRoute) {
     }
 
     @HostListener('window:scroll', [])
@@ -89,13 +90,13 @@ export class GalleryComponent implements OnInit {
     //   this.imageModal = image;
     //   this.imageModalUrl = image.url;
     // }
-    openModal(id: string, image: Image) {
-        console.log('openModal', id);
-        this.modalService.open(id);
-    }
-
-    closeModal(id: string) {
-        this.modalService.close(id);
-    }
+    // openModal(id: string, image: Image) {
+    //     console.log('openModal', id);
+    //     this.modalService.open(id);
+    // }
+    //
+    // closeModal(id: string) {
+    //     this.modalService.close(id);
+    // }
 
 }

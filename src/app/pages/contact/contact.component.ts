@@ -38,7 +38,7 @@ export class ContactComponent implements OnInit {
 
       const {name, email, message} = this.contactForm.value;
 
-      let formRequest = {name, email, message};
+      const formRequest = {name, email, message};
       this.af.list('/messages').push(formRequest);
 
       this.contactForm.reset();
