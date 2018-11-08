@@ -14,9 +14,9 @@ export class AppComponent {
         const myNav = document.getElementById('mynav');
         if (window.scrollY >= 200) {
             myNav.classList.add('nav-link-small');
-            myNav.classList.remove('nav-link-large');
+            myNav.classList.remove('nav-large');
         } else {
-            myNav.classList.add('nav-link-large');
+            myNav.classList.add('nav-large');
             myNav.classList.remove('nav-link-small');
         }
     }
