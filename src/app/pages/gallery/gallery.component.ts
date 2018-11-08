@@ -11,7 +11,7 @@ import {Image} from '../../models/image.model';
 })
 export class GalleryComponent implements OnInit {
 
-    countriesMock = ['belize', 'england', 'france', 'germany', 'guatemala', 'ireland', 'italy', 'portugal', 'studio', 'switzerland'];
+    countriesMock = ['guatemala', 'belize', 'portugal', 'ireland', 'italy', 'germany', 'france', 'england', 'switzerland', 'studio'];
     public selectedCountryPics: Image[] = [];
     public loaded = false;
     public selectedCountry = null;
@@ -22,17 +22,17 @@ export class GalleryComponent implements OnInit {
                 private route: ActivatedRoute) {
     }
 
-    @HostListener('window:scroll', [])
-    onWindowScroll() {
-        const myNav = document.getElementById('mynav');
-        if (window.scrollY >= 200) {
-            myNav.classList.add('nav-colored');
-            myNav.classList.remove('nav-transparent');
-        } else {
-            myNav.classList.add('nav-transparent');
-            myNav.classList.remove('nav-colored');
-        }
-    }
+    // @HostListener('window:scroll', [])
+    // onWindowScroll() {
+    //     const myNav = document.getElementById('mynav');
+    //     if (window.scrollY >= 200) {
+    //         myNav.classList.add('nav-colored');
+    //         myNav.classList.remove('nav-transparent');
+    //     } else {
+    //         myNav.classList.add('nav-transparent');
+    //         myNav.classList.remove('nav-colored');
+    //     }
+    // }
 
     ngOnInit() {
         this.route.paramMap.subscribe(params => {
@@ -96,7 +96,7 @@ export class GalleryComponent implements OnInit {
         const promises = this.countriesMock.map((el, i) => {
             if (this.dbStorage.storage.ref().child(country + '/' + (i + 1) + '.jpg')) {
                 const imageStorageRef = this.dbStorage.storage.ref().child(country + '/' + (i + 1).toString() + '.jpg');
-               return imageStorageRef.getDownloadURL().then(url => {
+                return imageStorageRef.getDownloadURL().then(url => {
                     return {index: i, name: country, url: url};
                     // if (this.selectedCountryPics.length === 10) {
                     //     this.loaded = true;
