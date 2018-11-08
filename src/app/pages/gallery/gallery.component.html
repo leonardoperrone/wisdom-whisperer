@@ -12,8 +12,8 @@
         <img [src]="i.url">
       </ng-container>
       <ng-container *ngIf="selectedCountry==='TRAVELS'">
-        <img [src]="i.url">
-        <div class="centered" *ngIf="i.name" [routerLink]="['/home', i.name]">{{i.name.toUpperCase()}}</div>
+        <img class="banner-image" [src]="i.url" [routerLink]="['/home', i.name]">
+        <div class="centered" *ngIf="i.name" >{{i.name.toUpperCase()}}</div>
       </ng-container>
     </div>
   </ng-container>

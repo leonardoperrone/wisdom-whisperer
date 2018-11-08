@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2331a5ae-38ba-47f4-8091-044925d7b976" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.c12003c66fbfcfb0f053.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/styles.76931bea31170d2d6c66.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" afterDir="false" />
@@ -56,17 +53,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="75" />
+          <entry key="html" value="92" />
           <entry key="json" value="8" />
-          <entry key="scss" value="273" />
+          <entry key="scss" value="288" />
           <entry key="ts" value="619" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="75" />
+          <entry key="HTML" value="92" />
           <entry key="JSON" value="8" />
-          <entry key="SCSS" value="273" />
+          <entry key="SCSS" value="288" />
           <entry key="TypeScript" value="619" />
         </counts>
       </usages-collector>
@@ -141,8 +138,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="186">
-                  <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+                <state relative-caret-position="246">
+                  <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -190,8 +187,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                <state relative-caret-position="201">
+                  <caret line="14" column="32" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -889,7 +886,7 @@
     <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file:///Users/leonardoperrone/Documents/GitHub/wisdom-whisperer/functions/.gitignore" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541634141708" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541665767539" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -949,12 +946,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541544659622</updated>
-      <workItem from="1541544669045" duration="19833000" />
+      <workItem from="1541544669045" duration="20429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19833000" />
+    <option name="totallyTimeSpent" value="20429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="976" extended-state="0" />
@@ -966,10 +963,10 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11782662" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11782662" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.24506389" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.24506389" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
@@ -1217,8 +1214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="246">
+          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
         </state>
       </provider>
     </entry>

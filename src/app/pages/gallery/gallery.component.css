@@ -55,7 +55,9 @@ mat-progress-spinner {
   letter-spacing: 5px; }
   .column img {
     width: 100%; }
-    .column img:hover {
+    .column img.banner-image {
+      cursor: pointer; }
+    .column img.banner-image:hover {
       opacity: 0.5; }
 
 .centered {
