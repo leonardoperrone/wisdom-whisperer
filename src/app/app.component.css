@@ -10,17 +10,20 @@ body {
 .nav-large {
   font-size: 16px; }
   .nav-large .navbar-nav .nav-link {
-    margin-right: 24px; }
+    margin-right: 40px;
+    margin-left: 40px; }
   .nav-large .logo-image {
-    width: 330px; }
+    width: 500px; }
   .nav-large .navbar-brand {
-    margin-bottom: 10px; }
+    margin-bottom: 30px;
+    margin-top: 10px; }
 
 .nav-link-small {
   height: 90px;
   font-size: 10px; }
   .nav-link-small .navbar-nav .nav-item.nav-link {
-    margin-right: 3px; }
+    margin-right: 2px;
+    margin-left: 2px; }
   .nav-link-small .logo-image {
     width: 230px; }
   .nav-link-small .navbar-brand {

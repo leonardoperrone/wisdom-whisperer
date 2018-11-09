@@ -13,21 +13,24 @@ body {
 .nav-large {
   font-size: 16px;
   .navbar-nav .nav-link {
-    margin-right: 24px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .logo-image {
-    width: 330px;
+    width: 500px;
   }
   .navbar-brand {
-     margin-bottom: 10px;
-   }
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
 }
 
 .nav-link-small {
   height: 90px;
   font-size: 10px;
   .navbar-nav .nav-item.nav-link {
-    margin-right: 3px;
+    margin-right: 2px;
+    margin-left: 2px;
   }
   .logo-image {
     width: 230px;

@@ -8,35 +8,37 @@ import {CommonModule} from '@angular/common';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: GalleryComponent
-  },
-  {
-    path: 'home',
-    component: GalleryComponent,
-  },
-  {
-    path: 'home/:country',
-    component: GalleryComponent,
-  },
-  {
-    path: 'contact',
-    component: ContactComponent,
-  },
-  {
-    path: 'about',
-    component: AboutComponent
-  },
-  { path: '**',
-    component: PageNotFoundComponent
-  }
+    {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: GalleryComponent,
+    },
+    {
+        path: 'home/:country',
+        component: GalleryComponent,
+    },
+    {
+        path: 'contact',
+        component: ContactComponent,
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    },
+    {
+        path: '**',
+        component: PageNotFoundComponent
+    }
 ];
 
 // export const MyRoutes: ModuleWithProviders = RouterModule.forRoot(routes);
 
 @NgModule({
-    imports: [CommonModule, RouterModule.forRoot(routes, { useHash: true })],
+    imports: [CommonModule, RouterModule.forRoot(routes, {useHash: true})],
     exports: [RouterModule],
 })
 

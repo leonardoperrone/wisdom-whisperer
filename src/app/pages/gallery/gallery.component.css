@@ -10,7 +10,8 @@ mat-progress-spinner {
     stroke: #fff; }
 
 .header {
-  padding: 65px 34px; }
+  padding-bottom: 85px;
+  padding-top: 140px; }
 
 .header .title {
   text-align: center;
