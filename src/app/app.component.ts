@@ -12,7 +12,7 @@ export class AppComponent {
     @HostListener('window:scroll', [])
     onWindowScroll() {
         const myNav = document.getElementById('mynav');
-        if (window.scrollY >= 200) {
+        if (window.scrollY >= 100) {
             myNav.classList.add('nav-link-small');
             myNav.classList.remove('nav-large');
         } else {

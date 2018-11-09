@@ -37,7 +37,7 @@ mat-progress-spinner {
 .grid-main {
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 10px;
-  margin: 0 100px; }
+  margin: 0 100px 100px 100px; }
 
 .grid-pic-gallery {
   padding-top: 20px;

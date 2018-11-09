@@ -14,7 +14,8 @@
   color: #fff;
   width: 50%;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-bottom: 00px; }
   .contact-form-container .form-field {
     margin-bottom: 30px; }
   .contact-form-container .form-control-name, .contact-form-container .form-control-email {
