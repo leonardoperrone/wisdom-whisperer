@@ -1,48 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<base href="/">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>The</title>
-    <!--<base href="/">-->
-    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400" rel="stylesheet">
-    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+    <title>Leonardo Perrone</title>
 
-<link rel="stylesheet" href="styles.d733c5dee3d0785607c1.css"></head>
-<body class="bg-main">
-<app-root>Loading...</app-root>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
-        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7da8f025f9869e645fe4.js"></script><script type="text/javascript" src="main.a7041bb9d39b17487c8f.js"></script></body>
+    <script>
+        // Store the URL the user was trying to access when receiving the 404.
+        sessionStorage.redirect = location.href;
+    </script>
 
-<!-- Github Pages hack to allow SPA refresh without receiving 404. -->
-<script>
-    (function () {
-        // Retrieve the URL the user was trying to access when receiving the 404.
-        var redirect = sessionStorage.redirect;
-        // Remove the URL from sessionStorage.
-        delete sessionStorage.redirect;
-        // Check if we actually need to redirect.
-        if (redirect && redirect != location.href) {
-            // We need to redirect to the URL the user was trying to access.
-            history.replaceState(null, null, redirect);
-        }
-    })();
-</script>
+    <!-- Immediately redirect to the base URL so we can use the SPA routing. -->
+    <meta http-equiv="refresh" content="0;URL='/'"></meta>
+</head>
+
+<body>
+<!-- IE required at least 512 bytes of data to show non-default 404. -->
+
+
+
+</body>
+
+
+</body>
 
 </html>
-
