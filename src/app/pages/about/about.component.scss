@@ -59,6 +59,7 @@
   display: flex;
   font-size: 18px;
   line-height: 50px;
+  padding-bottom: 150px;
 }
 .col1,
 .col2 {
@@ -73,7 +74,7 @@ p {
 }
 
 .col1-paragraph {
-  text-align: right;
+  //text-align: right;
   margin-left: 80px;
 }
 
@@ -94,12 +95,13 @@ p {
   float: left;
 }
 .img {
-  float: right;
+  float: left;
   clear: right;
-  margin: 20px 0 20px 20px;
+  padding-right: 0px;
+  margin: 20px 20px 20px 20px;
   border-radius: 50%;
-  shape-outside: circle(50%);
-  width: 500px;
+  shape-outside: circle();
+  width: 240px;
 }
 .col2 img {
   float: left;
@@ -112,7 +114,7 @@ p {
 }
 .col2 .inner {
   margin-left: 330px;
-  padding-top: 180px;
+  padding-top: 100px;
 }
 .col2 {
   margin-left: -540px;
