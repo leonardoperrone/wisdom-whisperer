@@ -1,5 +1,5 @@
 .header {
-  padding-bottom: 85px;
+  padding-bottom: 30px;
   padding-top: 140px;
 }
 
@@ -13,14 +13,137 @@
 }
 
 .about-grid {
-  display: grid;
+  display: inline-block;
   margin: 40px 150px;
   grid-column-gap: 230px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .about-me-intro, .about-me-quote {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 50px;
+  display: inline-block;
+}
+
+.about-me-intro {
+  //float: left;
+  //width: 500px;
+}
+
+.about-me-quote {
+  float: right;
+}
+
+//.profile-pic {
+//  width: 500px;
+//  display: inline-block;
+//  img {
+//    //width: 100%;
+//    width: 30%;
+//    //height: auto;
+//    //min-width: 500px;
+//    float: left;
+//    margin-right:2rem;
+//    border-radius: 50%;
+//    -webkit-shape-outside:circle();
+//    shape-outside:circle();
+//  }
+//}
+
+.wrap {
+  margin: auto;
+  overflow: hidden;
+  border-spacing: 10px;
+  position: relative;
+  display: flex;
+  font-size: 18px;
+  line-height: 50px;
+}
+.col1,
+.col2 {
+  color: #fff;
+  padding: 10px;
+  text-align: justify;
+  width: calc(50% + 360px);
+}
+p {
+  //padding: 5px;
+  margin: 0 0 1em;
+}
+
+.col1-paragraph {
+  text-align: right;
+  margin-left: 80px;
+}
+
+.col2-paragraph {
+  text-align: left;
+  margin-left: 10px;
+  padding-left: 0px;
+}
+
+.col1:before,
+.col2:before {
+  float: right;
+  width: 1px;
+  height: 90px;
+  content: " ";
+}
+.col2:before {
+  float: left;
+}
+.img {
+  float: right;
+  clear: right;
+  margin: 20px 0 20px 20px;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  width: 500px;
+}
+.col2 img {
+  float: left;
+  margin: 20px 20px 20px 20px;
+  clear: left;
+}
+.col1 .inner {
+  margin-right: 360px;
+  padding-top: 100px;
+}
+.col2 .inner {
+  margin-left: 330px;
+  padding-top: 180px;
+}
+.col2 {
+  margin-left: -540px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrap {
+    display: block;
+  }
+  .col2:before {
+    display: none;
+  }
+  .col1,
+  .col2,
+  .col1 .inner,
+  .col2 .inner {
+    width: auto;
+    margin: 0;
+  }
+  .col2 .img {
+    display: none;
+  }
+  .img {
+    width: 50%;
+    height: auto;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col1:before {
+    display: none;
+  }
 }
