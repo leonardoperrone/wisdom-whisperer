@@ -40,7 +40,8 @@
   color: #fff;
   padding: 10px;
   text-align: justify;
-  width: calc(50% + 360px); }
+  width: calc(50% + 360px);
+  margin-left: 3%; }
 
 p {
   margin: 0 0 1em; }
