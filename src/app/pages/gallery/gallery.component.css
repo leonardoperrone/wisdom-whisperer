@@ -11,24 +11,39 @@ mat-progress-spinner {
 
 .header {
   padding-bottom: 85px;
-  padding-top: 140px; }
+  margin-top: -100px; }
 
 .title-home {
   margin-top: 35%; }
 
 .header-quote-container {
-  margin-top: 15%;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .header-quote-container .fa-chevron-circle-down {
     color: #fff;
-    margin-top: 40px; }
+    margin-top: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header-quote-container .fa-chevron-circle-down:hover {
+      opacity: 0.7; }
+  .header-quote-container img {
+    width: 100%; }
 
-.title, .title-home, .header-quote {
+.header-quote {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.title, .title-home, .quote {
   text-align: center;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 100;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
   font-size: 42px; }
 
 .row {
@@ -47,7 +62,7 @@ mat-progress-spinner {
 .grid-main {
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 10px;
-  margin: 0 100px 100px 100px; }
+  margin: 0 50px 100px; }
 
 .grid-pic-gallery {
   padding-top: 20px;

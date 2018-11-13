@@ -1,24 +1,20 @@
 body {
   background: #1f1f1f; }
 
-.nav-colored {
-  background-color: rgba(255, 245, 255, 0.2); }
-
-.nav-transparent {
-  background-color: rgba(255, 245, 255, 0); }
-
 .nav-large {
-  font-size: 16px; }
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px; }
   .nav-large .navbar-nav .nav-link {
     margin-right: 40px;
     margin-left: 40px; }
   .nav-large .logo-image {
-    width: 400px; }
+    width: 450px; }
   .nav-large .navbar-brand {
     margin-bottom: 30px;
     margin-top: 10px; }
 
 .nav-link-small {
+  background-color: #1f1f1f;
   height: 90px;
   font-size: 10px; }
   .nav-link-small .navbar-nav .nav-item.nav-link {

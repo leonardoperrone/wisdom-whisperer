@@ -12,12 +12,19 @@ export class AppComponent {
     @HostListener('window:scroll', [])
     onWindowScroll() {
         const myNav = document.getElementById('mynav');
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 50) {
             myNav.classList.add('nav-link-small');
             myNav.classList.remove('nav-large');
         } else {
             myNav.classList.add('nav-large');
             myNav.classList.remove('nav-link-small');
+        }
+        if (window.scrollY >= 50) {
+            myNav.classList.add('nav-colored');
+            myNav.classList.remove('nav-transparent');
+        } else {
+            myNav.classList.add('nav-transparent');
+            myNav.classList.remove('nav-colored');
         }
     }
 

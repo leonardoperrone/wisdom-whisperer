@@ -1,11 +1,17 @@
 <div class="header">
-  <div *ngIf="selectedCountry==='TRAVELS'" class="header-quote-container">
-    <h2 class="header-quote">see what i see
-      <br>
-      this is my journey
-    </h2>
-  <a (click)="goToTravel()"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
-  </div>
+  <ng-container *ngIf="selectedCountry==='TRAVELS'">
+    <div class="header-quote-container">
+      <img src="assets/quote-background.jpg">
+      <div class="header-quote">
+        <h2 class="quote">See what I see,
+          <br>
+          this is my journey.
+        </h2>
+      </div>
+      <a (click)="goToTravel()"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+    </div>
+
+  </ng-container>
 
   <h2 id="travel" [ngClass]="selectedCountry==='TRAVELS' ? 'title-home' : 'title'"> {{selectedCountry | uppercase}}</h2>
 </div>
