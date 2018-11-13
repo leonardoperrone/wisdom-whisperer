@@ -1,22 +1,30 @@
 <div class="header">
-    <h2 class="title"> {{selectedCountry | uppercase}}</h2>
+  <div *ngIf="selectedCountry==='TRAVELS'" class="header-quote-container">
+    <h2 class="header-quote">see what i see
+      <br>
+      this is my journey
+    </h2>
+  <a (click)="goToTravel()"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+  </div>
+
+  <h2 id="travel" [ngClass]="selectedCountry==='TRAVELS' ? 'title-home' : 'title'"> {{selectedCountry | uppercase}}</h2>
 </div>
 
 <div [ngClass]="selectedCountry==='TRAVELS' ? 'grid-main' : 'grid-pic-gallery'">
-    <mat-progress-spinner [value]="75" [strokeWidth]="10" [diameter]="50" [mode]="'indeterminate'"
-                          *ngIf="!loaded"></mat-progress-spinner>
-    <ng-container *ngIf="loaded">
-        <div class="column" *ngFor="let i of selectedCountryPics">
-            <ng-container *ngIf="selectedCountry!=='TRAVELS'">
-                <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
-                <img [src]="i.url">
-            </ng-container>
-            <ng-container *ngIf="selectedCountry==='TRAVELS'">
-                <img class="banner-image" [src]="i.url" [routerLink]="['/home', i.name]">
-                <div class="centered" *ngIf="i.name" [routerLink]="['/home', i.name]">{{i.name.toUpperCase()}}</div>
-            </ng-container>
-        </div>
-    </ng-container>
+  <mat-progress-spinner [value]="75" [strokeWidth]="10" [diameter]="50" [mode]="'indeterminate'"
+                        *ngIf="!loaded"></mat-progress-spinner>
+  <ng-container *ngIf="loaded">
+    <div class="column" *ngFor="let i of selectedCountryPics">
+      <ng-container *ngIf="selectedCountry!=='TRAVELS'">
+        <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
+        <img [src]="i.url">
+      </ng-container>
+      <ng-container *ngIf="selectedCountry==='TRAVELS'">
+        <img class="banner-image" [src]="i.url" [routerLink]="['/home', i.name]">
+        <div class="centered" *ngIf="i.name" [routerLink]="['/home', i.name]">{{i.name.toUpperCase()}}</div>
+      </ng-container>
+    </div>
+  </ng-container>
 </div>
 
 <!--<ng-template #imageModal let-modal>-->

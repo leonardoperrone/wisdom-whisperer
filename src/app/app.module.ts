@@ -13,7 +13,6 @@ import {AngularFireStorageModule} from 'angularfire2/storage';
 import {LoaderComponent} from './common/loader/loader.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule} from '@angular/material';
-import {GalleryComponent} from './pages/gallery/gallery.component';
 import {AboutComponent} from './pages/about/about.component';
 import {HomeComponent} from './pages/home/home.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -24,6 +23,7 @@ import {ToastrModule} from 'ngx-toastr';
 import {ModalComponent} from './common/modal';
 import {ModalService} from '../services/modal.service';
 import {AppRoutingModule} from './app-routing.module';
+import {GalleryComponent} from './pages/gallery/gallery.component';
 
 @NgModule({
     declarations: [

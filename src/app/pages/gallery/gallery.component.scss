@@ -16,7 +16,20 @@ mat-progress-spinner {
   padding-top: 140px;
 }
 
-.header .title {
+.title-home {
+  margin-top: 35%;
+}
+
+.header-quote-container {
+  margin-top: 15%;
+  text-align: center;
+  .fa-chevron-circle-down {
+    color: #fff;
+    margin-top: 40px;
+  }
+}
+
+.title, .title-home, .header-quote {
   text-align: center;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
