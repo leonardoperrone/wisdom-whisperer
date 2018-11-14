@@ -1,4 +1,4 @@
-<div class="header">
+<div [class]="selectedCountry==='TRAVELS' ? 'header' : 'header-gallery'">
   <ng-container *ngIf="selectedCountry==='TRAVELS'">
     <div class="header-quote-container">
       <img src="assets/quote-background.jpg">
