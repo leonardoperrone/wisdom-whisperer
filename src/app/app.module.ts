@@ -25,6 +25,7 @@ import {ModalService} from '../services/modal.service';
 import {AppRoutingModule} from './app-routing.module';
 import {GalleryComponent} from './pages/gallery/gallery.component';
 import {ParallaxDirective} from '../directives/parallax.directive';
+import {FooterComponent} from './common/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -36,6 +37,7 @@ import {ParallaxDirective} from '../directives/parallax.directive';
         PageNotFoundComponent,
         ContactComponent,
         ModalComponent,
+        FooterComponent,
         ParallaxDirective
     ],
     imports: [
