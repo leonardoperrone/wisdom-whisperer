@@ -66,8 +66,10 @@
   color: #fff;
   padding: 10px;
   text-align: justify;
-  width: calc(50% + 360px);
-  margin-left: 3%;
+  //width: calc(50% + 360px);
+  width: 100%;
+  //margin-left: 3%;
+  padding: 0 50px;
 }
 p {
   //padding: 5px;
@@ -75,14 +77,14 @@ p {
 }
 
 .col1-paragraph {
-  //text-align: right;
-  margin-left: 80px;
+  text-align: right;
+  //margin-left: 80px;
 }
 
 .col2-paragraph {
   text-align: left;
-  margin-left: 10px;
-  padding-left: 0px;
+  //margin-left: 10px;
+  //padding-left: 0px;
 }
 
 .col1:before,
@@ -98,7 +100,7 @@ p {
 .img {
   float: left;
   clear: right;
-  padding-right: 0px;
+  //padding-right: 0px;
   margin: 20px 20px 20px 20px;
   border-radius: 50%;
   shape-outside: circle();
@@ -110,15 +112,15 @@ p {
   clear: left;
 }
 .col1 .inner {
-  margin-right: 360px;
+  //margin-right: 360px;
   padding-top: 100px;
 }
 .col2 .inner {
-  margin-left: 330px;
+  //margin-left: 330px;
   padding-top: 100px;
 }
 .col2 {
-  margin-left: -540px;
+  //margin-left: -540px;
 }
 
 @media screen and (max-width: 800px) {

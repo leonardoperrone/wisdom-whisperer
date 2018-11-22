@@ -40,19 +40,17 @@
   color: #fff;
   padding: 10px;
   text-align: justify;
-  width: calc(50% + 360px);
-  margin-left: 3%; }
+  width: 100%;
+  padding: 0 50px; }
 
 p {
   margin: 0 0 1em; }
 
 .col1-paragraph {
-  margin-left: 80px; }
+  text-align: right; }
 
 .col2-paragraph {
-  text-align: left;
-  margin-left: 10px;
-  padding-left: 0px; }
+  text-align: left; }
 
 .col1:before,
 .col2:before {
@@ -67,7 +65,6 @@ p {
 .img {
   float: left;
   clear: right;
-  padding-right: 0px;
   margin: 20px 20px 20px 20px;
   border-radius: 50%;
   shape-outside: circle();
@@ -79,15 +76,10 @@ p {
   clear: left; }
 
 .col1 .inner {
-  margin-right: 360px;
   padding-top: 100px; }
 
 .col2 .inner {
-  margin-left: 330px;
   padding-top: 100px; }
-
-.col2 {
-  margin-left: -540px; }
 
 @media screen and (max-width: 800px) {
   .wrap {
