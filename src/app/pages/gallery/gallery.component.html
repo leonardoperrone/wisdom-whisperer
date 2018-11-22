@@ -17,7 +17,7 @@
 </div>
 
 <div [ngClass]="selectedCountry==='TRAVELS' ? 'grid-main' : 'grid-pic-gallery'">
-  <mat-progress-spinner [value]="75" [strokeWidth]="10" [diameter]="50" [mode]="'indeterminate'"
+  <mat-progress-spinner [value]="75" [strokeWidth]="3" [diameter]="50" [mode]="'indeterminate'"
                         *ngIf="!loaded"></mat-progress-spinner>
   <ng-container *ngIf="loaded">
     <div class="column" *ngFor="let i of selectedCountryPics">
