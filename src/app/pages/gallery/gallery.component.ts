@@ -49,12 +49,20 @@ export class GalleryComponent implements OnInit {
                     const loadAll = new Array(10);
                     loadAll.fill(false);
                     this.selectedCountryPics.map((pic, idx) => {
-                        pic.image.onload = () => {
+                        if (!pic.image.complete) {
+                            pic.image.onload = () => {
+                                // console.log('i', ix);
+                                loadAll[idx] = true;
+                                if (loadAll.every(i => i === true)) {
+                                    this.loaded = true;
+                                }
+                            };
+                        } else {
                             loadAll[idx] = true;
                             if (loadAll.every(i => i === true)) {
                                 this.loaded = true;
                             }
-                        };
+                        }
                     });
                 });
 
@@ -84,12 +92,20 @@ export class GalleryComponent implements OnInit {
             const loadAll = new Array(10);
             loadAll.fill(false);
             this.selectedCountryPics.map((pic, idx) => {
-                pic.image.onload = () => {
+                if (!pic.image.complete) {
+                    pic.image.onload = () => {
+                        // console.log('i', ix);
+                        loadAll[idx] = true;
+                        if (loadAll.every(i => i === true)) {
+                            this.loaded = true;
+                        }
+                    };
+                } else {
                     loadAll[idx] = true;
                     if (loadAll.every(i => i === true)) {
                         this.loaded = true;
                     }
-                };
+                }
             });
 
             // console.log(document.getElementById('img-gallery').complete);
