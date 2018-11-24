@@ -2,7 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AngularFireStorage} from 'angularfire2/storage';
 import {ActivatedRoute} from '@angular/router';
-import {Image} from '../../models/image.model';
+import {GalleryImage} from '../../models/image.model';
 
 @Component({
     selector: 'app-gallery',
@@ -13,29 +13,17 @@ export class GalleryComponent implements OnInit {
     @ViewChild('travel') travel: any;
 
     countriesMock = ['guatemala', 'belize', 'portugal', 'ireland', 'italy', 'germany', 'france', 'england', 'switzerland', 'studio'];
-    public selectedCountryPics: Image[] = [];
+    public selectedCountryPics: GalleryImage[] = [];
     public loaded = false;
     public selectedCountry = null;
-    public imageModal: Image;
-    public imageModalUrl: string;
 
     constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage,
                 private route: ActivatedRoute) {
     }
 
-    // @HostListener('window:scroll', [])
-    // onWindowScroll() {
-    //     const myNav = document.getElementById('mynav');
-    //     if (window.scrollY >= 200) {
-    //         myNav.classList.add('nav-colored');
-    //         myNav.classList.remove('nav-transparent');
-    //     } else {
-    //         myNav.classList.add('nav-transparent');
-    //         myNav.classList.remove('nav-colored');
-    //     }
-    // }
 
     ngOnInit() {
+        // console.log(this.imageTesting.src);
         this.route.paramMap.subscribe(params => {
             const c = params.get('country');
             if (c) {
@@ -43,34 +31,14 @@ export class GalleryComponent implements OnInit {
             } else {
                 this.selectedCountry = 'TRAVELS';
                 this.selectedCountryPics = [];
-                // this.countriesMock.map((country) => {
-                //     const url = 'assets/images/banners/' + country + '.jpg';
-                //     this.selectedCountryPics.push({name: country, url: url});
-                //     // if (this.selectedCountryPics.length === 10) {
-                //     // }
-                // });
-                // this.loaded = true;
-                //
-                // this.countriesMock.forEach((country, idx) => {
-                //     if (this.dbStorage.storage.ref().child('banners/' + country + '.jpg')) {
-                //         const imageStorageRef = this.dbStorage.storage.ref().child('banners/' + country + '.jpg');
-                //         imageStorageRef.getDownloadURL().then(url => {
-                //             console.log('url', url);
-                //             console.log('country', country);
-                //             this.selectedCountryPics.push({index: idx, name: country, url: url});
-                //
-                //             if (this.selectedCountryPics.length === 9) {
-                //
-                //             }
-                //         });
-                //     }
-                // });
 
                 const promises = this.countriesMock.map((country, idx) => {
                     if (this.dbStorage.storage.ref().child('banners/' + country + '.jpg')) {
                         const imageStorageRef = this.dbStorage.storage.ref().child('banners/' + country + '.jpg');
+                        const image = new Image();
                         return imageStorageRef.getDownloadURL().then(url => {
-                            return {index: idx, name: country, url: url};
+                            image.src = url;
+                            return {index: idx, name: country, url: url, image: image};
                             // this.selectedCountryPics.push({index: idx, name: country, url: url});
                         });
                     }
@@ -78,7 +46,16 @@ export class GalleryComponent implements OnInit {
 
                 Promise.all(promises).then((results) => {
                     this.selectedCountryPics = results;
-                    this.loaded = true;
+                    const loadAll = new Array(10);
+                    loadAll.fill(false);
+                    this.selectedCountryPics.map((pic, idx) => {
+                        pic.image.onload = () => {
+                            loadAll[idx] = true;
+                            if (loadAll.every(i => i === true)) {
+                                this.loaded = true;
+                            }
+                        };
+                    });
                 });
 
 
@@ -95,17 +72,26 @@ export class GalleryComponent implements OnInit {
         const promises = this.countriesMock.map((el, i) => {
             if (this.dbStorage.storage.ref().child(country + '/' + (i + 1) + '.jpg')) {
                 const imageStorageRef = this.dbStorage.storage.ref().child(country + '/' + (i + 1).toString() + '.jpg');
+                const image = new Image();
                 return imageStorageRef.getDownloadURL().then(url => {
-                    return {index: i, name: country, url: url};
-                    // if (this.selectedCountryPics.length === 10) {
-                    //     this.loaded = true;
-                    // }
+                    image.src = url;
+                    return {index: i, name: country, url: url, image: image};
                 });
             }
         });
         Promise.all(promises).then((results) => {
             this.selectedCountryPics = results;
-            this.loaded = true;
+            const loadAll = new Array(10);
+            loadAll.fill(false);
+            this.selectedCountryPics.map((pic, idx) => {
+                pic.image.onload = () => {
+                    loadAll[idx] = true;
+                    if (loadAll.every(i => i === true)) {
+                        this.loaded = true;
+                    }
+                };
+            });
+
             // console.log(document.getElementById('img-gallery').complete);
         });
     }
@@ -114,12 +100,12 @@ export class GalleryComponent implements OnInit {
         document.getElementById('travel').scrollIntoView({block: 'center', behavior: 'smooth'});
     }
 
-    // openImageModal(content, image: Image) {
+    // openImageModal(content, image: GalleryImage) {
     //   this.modalService.open(content, {size: 'lg'});
     //   this.imageModal = image;
     //   this.imageModalUrl = image.url;
     // }
-    // openModal(id: string, image: Image) {
+    // openModal(id: string, image: GalleryImage) {
     //     console.log('openModal', id);
     //     this.modalService.open(id);
     // }

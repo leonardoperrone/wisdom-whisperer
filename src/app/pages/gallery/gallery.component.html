@@ -1,5 +1,5 @@
 <div [class]="selectedCountry==='TRAVELS' ? 'header' : 'header-gallery'">
-  <ng-container *ngIf="selectedCountry==='TRAVELS'">
+  <ng-container *ngIf="selectedCountry==='TRAVELS' && loaded">
     <div class="header-quote-container">
       <img src="assets/quote-background.jpg">
       <div class="header-quote">
@@ -23,10 +23,10 @@
     <div class="column" *ngFor="let i of selectedCountryPics">
       <ng-container *ngIf="selectedCountry!=='TRAVELS'">
         <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
-        <img [src]="i.url">
+        <img [src]="i.image.src">
       </ng-container>
       <ng-container *ngIf="selectedCountry==='TRAVELS'">
-        <img id="img-gallery" class="banner-image" [src]="i.url" [routerLink]="['/home', i.name]">
+        <img id="img-gallery" class="banner-image" [src]="i.image.src" [routerLink]="['/home', i.name]">
         <div class="centered" *ngIf="i.name" [routerLink]="['/home', i.name]">{{i.name.toUpperCase()}}</div>
       </ng-container>
     </div>
