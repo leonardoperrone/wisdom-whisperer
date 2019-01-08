@@ -30,7 +30,6 @@ export class AppComponent {
 
     public toggleMenu() {
         this.showMenu = !this.showMenu;
-        console.log('show menu', this.showMenu);
     }
 
 

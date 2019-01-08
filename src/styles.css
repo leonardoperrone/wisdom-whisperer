@@ -4,4 +4,7 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: 100; }
 
+body.modal-open .navbar {
+  display: none; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -33,6 +33,7 @@
     "firebase": "^5.4.0",
     "firebase-admin": "^6.1.0",
     "firebase-functions": "^2.1.0",
+    "lodash": "^4.17.11",
     "ngx-toastr": "^9.1.1",
     "node-sass": "^4.7.2",
     "nodemailer": "^4.6.8",

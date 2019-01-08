@@ -7,3 +7,16 @@
   font-weight: $font-weight-thin;
 }
 
+body.modal-open {
+  //overflow: hidden;
+}
+
+body.modal-open .navbar {
+  //overflow: hidden;
+  display: none;
+}
+
+
+
+
+

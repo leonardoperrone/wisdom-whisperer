@@ -26,6 +26,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {GalleryComponent} from './pages/gallery/gallery.component';
 import {ParallaxDirective} from '../directives/parallax.directive';
 import {FooterComponent} from './common/footer/footer.component';
+import { ImageModalComponent } from './common/image-modal/image-modal.component';
 
 @NgModule({
     declarations: [
@@ -38,7 +39,8 @@ import {FooterComponent} from './common/footer/footer.component';
         ContactComponent,
         ModalComponent,
         FooterComponent,
-        ParallaxDirective
+        ParallaxDirective,
+        ImageModalComponent
     ],
     imports: [
         BrowserModule,

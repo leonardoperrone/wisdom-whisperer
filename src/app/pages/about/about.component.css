@@ -19,7 +19,7 @@
 .about-me-intro, .about-me-quote {
   color: #fff;
   font-size: 18px;
-  line-height: 45px;
+  line-height: 35px;
   display: inline-block; }
 
 .about-me-quote {
@@ -47,7 +47,7 @@ p {
   margin: 0 0 1em; }
 
 .col1-paragraph {
-  text-align: right; }
+  text-align: justify; }
 
 .col2-paragraph {
   text-align: left; }

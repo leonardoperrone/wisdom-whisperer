@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AngularFireStorage} from 'angularfire2/storage';
 import {ActivatedRoute} from '@angular/router';
@@ -16,14 +16,33 @@ export class GalleryComponent implements OnInit {
     public selectedCountryPics: GalleryImage[] = [];
     public loaded = false;
     public selectedCountry = null;
+    public isChevron = true;
+    public showDialog = false;
+    public selectedImageIndex;
+    public selectedImage = {};
+    public innerWidth: any;
 
     constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage,
-                private route: ActivatedRoute) {
+                private route: ActivatedRoute, private renderer: Renderer2) {
     }
 
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+        if (window.scrollY >= 20) {
+            this.isChevron = false;
+        } else {
+            this.isChevron = true;
+        }
+    }
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        this.innerWidth = window.innerWidth;
+    }
 
     ngOnInit() {
-        // console.log(this.imageTesting.src);
+        this.innerWidth = window.innerWidth;
+
         this.route.paramMap.subscribe(params => {
             const c = params.get('country');
             if (c) {
@@ -39,7 +58,6 @@ export class GalleryComponent implements OnInit {
                         return imageStorageRef.getDownloadURL().then(url => {
                             image.src = url;
                             return {index: idx, name: country, url: url, image: image};
-                            // this.selectedCountryPics.push({index: idx, name: country, url: url});
                         });
                     }
                 });
@@ -51,7 +69,6 @@ export class GalleryComponent implements OnInit {
                     this.selectedCountryPics.map((pic, idx) => {
                         if (!pic.image.complete) {
                             pic.image.onload = () => {
-                                // console.log('i', ix);
                                 loadAll[idx] = true;
                                 if (loadAll.every(i => i === true)) {
                                     this.loaded = true;
@@ -72,7 +89,6 @@ export class GalleryComponent implements OnInit {
     }
 
     countrySelected(country: string) {
-        // this.router.navigate(['gallery', country]);
         this.selectedCountryPics = [];
         this.selectedCountry = country;
         this.loaded = false;
@@ -94,7 +110,6 @@ export class GalleryComponent implements OnInit {
             this.selectedCountryPics.map((pic, idx) => {
                 if (!pic.image.complete) {
                     pic.image.onload = () => {
-                        // console.log('i', ix);
                         loadAll[idx] = true;
                         if (loadAll.every(i => i === true)) {
                             this.loaded = true;
@@ -107,8 +122,6 @@ export class GalleryComponent implements OnInit {
                     }
                 }
             });
-
-            // console.log(document.getElementById('img-gallery').complete);
         });
     }
 
@@ -116,18 +129,12 @@ export class GalleryComponent implements OnInit {
         document.getElementById('travel').scrollIntoView({block: 'center', behavior: 'smooth'});
     }
 
-    // openImageModal(content, image: GalleryImage) {
-    //   this.modalService.open(content, {size: 'lg'});
-    //   this.imageModal = image;
-    //   this.imageModalUrl = image.url;
-    // }
-    // openModal(id: string, image: GalleryImage) {
-    //     console.log('openModal', id);
-    //     this.modalService.open(id);
-    // }
-    //
-    // closeModal(id: string) {
-    //     this.modalService.close(id);
-    // }
+    public openModal(index: number) {
+        this.selectedImageIndex = index;
+        // this.selectedImage = _.find(this.selectedCountryPics, {'index': index});
+        this.selectedImage = this.selectedCountryPics[index];
+        this.showDialog = !this.showDialog;
+        this.renderer.addClass(document.body, 'modal-open');
 
+    }
 }

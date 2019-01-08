@@ -1,0 +1,22 @@
+<div [@dialog] *ngIf="visible" class="dialog modal modal-dialog-centered">
+  <div class="content modal-content" >
+    <button *ngIf="closable && innerWidth < 1200" (click)="closeModal()" aria-label="Close" class="dialog-close-btn">
+      <svg viewbox="0 0 40 40">
+        <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30"/>
+      </svg>
+    </button>
+    <div class="current-image-container">
+      <img class="modal-image" [src]="currentImage.image.src">
+    </div>
+  </div>
+  <button *ngIf="closable && innerWidth >= 1200" (click)="closeModal()" aria-label="Close" class="dialog-close-btn">
+    <svg viewbox="0 0 40 40">
+      <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30"/>
+    </svg>
+  </button>
+  <button *ngIf="closable" (click)="previousImage()" aria-label="Left" class="dialog-left-btn"><i
+      class="fas fa-chevron-left fa-3x"></i></button>
+  <button *ngIf="closable" (click)="nextImage()" aria-label="Right" class="dialog-right-btn"><i
+      class="fas fa-chevron-right fa-3x"></i></button>
+</div>
+<div *ngIf="visible" class="overlay" (click)="closeModal()"></div>
