@@ -25,7 +25,7 @@
     <div class="column" *ngFor="let i of selectedCountryPics">
       <ng-container *ngIf="selectedCountry!=='TRAVELS'">
         <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
-        <img [src]="i.image.src" (click)="innerWidth < 1024 ? '' : openModal(i.index)">
+        <img class="banner-image" [src]="i.image.src" (click)="innerWidth < 1024 ? '' : openModal(i.index)">
       </ng-container>
       <ng-container *ngIf="selectedCountry==='TRAVELS'">
         <img id="img-gallery" class="banner-image" [src]="i.image.src" [routerLink]="['/home', i.name]">

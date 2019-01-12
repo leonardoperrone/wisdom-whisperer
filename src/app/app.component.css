@@ -15,7 +15,7 @@ body {
 
 .nav-link-small {
   background-color: #1f1f1f;
-  height: 90px;
+  height: 100px;
   font-size: 10px; }
   .nav-link-small .navbar-nav .nav-item.nav-link {
     margin-right: 2px;
