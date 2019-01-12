@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
     public selectedCountry = null;
     public isChevron = true;
     public showDialog = false;
-    public selectedImageIndex;
+    public selectedImageIndex = 0;
     public selectedImage = {};
     public innerWidth: any;
 
@@ -132,7 +132,7 @@ export class GalleryComponent implements OnInit {
     public openModal(index: number) {
         this.selectedImageIndex = index;
         // this.selectedImage = _.find(this.selectedCountryPics, {'index': index});
-        this.selectedImage = this.selectedCountryPics[index];
+        // this.selectedImage = this.selectedCountryPics[index];
         this.showDialog = !this.showDialog;
         this.renderer.addClass(document.body, 'modal-open');
 

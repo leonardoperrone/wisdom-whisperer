@@ -1,4 +1,4 @@
-import {Component, EventEmitter, HostListener, Input, OnInit, Output, Renderer2} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, Renderer2, SimpleChanges} from '@angular/core';
 import {animate, style, transition, trigger} from '@angular/animations';
 import {GalleryImage} from '../../models/image.model';
 
@@ -18,43 +18,53 @@ import {GalleryImage} from '../../models/image.model';
         ])
     ]
 })
-export class ImageModalComponent implements OnInit {
+export class ImageModalComponent implements OnInit, OnChanges {
     @Input() closable = true;
-    @Input() visible: boolean;
-    @Input() currentIndex: number;
-    @Input() images: GalleryImage[];
-    @Input() currentImage: GalleryImage;
-    @Input() innerWidth: any;
+    @Input() visible = false;
+    @Input() currentIndex = 0;
+    @Input() images: GalleryImage[] = [];
+    @Input() currentImage: GalleryImage = null;
+    @Input() innerWidth: number;
     @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+    @Output() currentIndexChange: EventEmitter<number> = new EventEmitter<number>();
 
     constructor(private renderer: Renderer2) {
     }
 
     @HostListener('document:keydown', ['$event'])
     onKeyDownHandler(event: KeyboardEvent) {
-        if (event.key === 'Escape') {
+        if (event.key === 'Escape' && this.visible) {
             this.closeModal();
+        } else if (event.key === 'ArrowLeft' && this.visible) {
+            this.previousImage();
+        } else if (event.key === 'ArrowRight' && this.visible) {
+            this.nextImage();
         }
     }
 
     ngOnInit() {
     }
 
+    ngOnChanges(changes: SimpleChanges) {
+            this.currentImage = this.images[this.currentIndex];
+    }
+
     closeModal() {
         this.visible = false;
+        this.currentIndex = null;
         this.visibleChange.emit(this.visible);
+        this.currentIndexChange.emit(this.currentIndex);
         this.renderer.removeClass(document.body, 'modal-open');
     }
 
     previousImage() {
-        this.currentIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.currentIndex;
+        this.currentIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.images.length - 1;
         this.currentImage = this.images[this.currentIndex];
     }
 
     nextImage() {
-        this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : this.currentIndex;
+        this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
         this.currentImage = this.images[this.currentIndex];
-
     }
 
 }

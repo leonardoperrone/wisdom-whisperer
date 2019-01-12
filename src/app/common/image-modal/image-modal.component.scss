@@ -40,16 +40,17 @@
 
 .dialog-close-btn, .dialog-left-btn, .dialog-right-btn {
   border: 0;
-  background: none;
   color: #fff;
   margin: 5px;
   position: absolute;
-  .fas {
-    color: #fff;
-  }
+  background: none;
+  opacity: 0.3;
   &:hover {
     opacity: 0.7;
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 }
 
@@ -60,6 +61,7 @@
   font-size: 60px;
   width: 40px;
   height: 40px;
+  background: none;
   svg {
     display: block;
     width: 40px;

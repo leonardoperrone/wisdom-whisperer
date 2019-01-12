@@ -35,5 +35,5 @@
   </ng-container>
 </div>
 
-<app-image-modal *ngIf="selectedImage" [innerWidth]="innerWidth" [(visible)]="showDialog" [images]="selectedCountryPics" [currentImage]="selectedImage" [currentIndex]="selectedImageIndex">
+<app-image-modal *ngIf="selectedCountryPics" [innerWidth]="innerWidth" [(visible)]="showDialog" [(currentIndex)]="selectedImageIndex" [images]="selectedCountryPics">
 </app-image-modal>
