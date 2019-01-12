@@ -11,7 +11,7 @@
       <a *ngIf="isChevron" id="chevron-down" (click)="goToTravel()"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
     </div>
     <!--<div class="footprints">-->
-      <!--<img src="../../../assets/footprints-empty.png">-->
+    <!--<img src="../../../assets/footprints-empty.png">-->
     <!--</div>-->
   </ng-container>
 
@@ -19,8 +19,13 @@
 </div>
 
 <div [ngClass]="selectedCountry==='TRAVELS' ? 'grid-main' : 'grid-pic-gallery'">
-  <mat-progress-spinner [value]="75" [strokeWidth]="3" [diameter]="50" [mode]="'indeterminate'"
-                        *ngIf="!loaded"></mat-progress-spinner>
+  <ng-container *ngIf="!loaded">
+    <mat-progress-spinner [value]="75" [strokeWidth]="3" [diameter]="50"
+                          [mode]="'indeterminate'"></mat-progress-spinner>
+    <p *ngIf="isLongLoading && selectedCountry!=='TRAVELS'" class="loader-text">
+      Sorry for the wait, <br> we're working on improving loading speed :)
+    </p>
+  </ng-container>
   <ng-container *ngIf="loaded">
     <div class="column" *ngFor="let i of selectedCountryPics">
       <ng-container *ngIf="selectedCountry!=='TRAVELS'">
@@ -35,5 +40,6 @@
   </ng-container>
 </div>
 
-<app-image-modal *ngIf="selectedCountryPics" [innerWidth]="innerWidth" [(visible)]="showDialog" [(currentIndex)]="selectedImageIndex" [images]="selectedCountryPics">
+<app-image-modal *ngIf="selectedCountryPics" [innerWidth]="innerWidth" [(visible)]="showDialog"
+                 [(currentIndex)]="selectedImageIndex" [images]="selectedCountryPics">
 </app-image-modal>

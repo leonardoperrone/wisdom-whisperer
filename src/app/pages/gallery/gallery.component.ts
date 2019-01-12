@@ -15,6 +15,7 @@ export class GalleryComponent implements OnInit {
     countriesMock = ['guatemala', 'belize', 'portugal', 'ireland', 'italy', 'germany', 'france', 'england', 'switzerland', 'studio'];
     public selectedCountryPics: GalleryImage[] = [];
     public loaded = false;
+    public isLongLoading = false;
     public selectedCountry = null;
     public isChevron = true;
     public showDialog = false;
@@ -107,9 +108,21 @@ export class GalleryComponent implements OnInit {
             this.selectedCountryPics = results;
             const loadAll = new Array(10);
             loadAll.fill(false);
+            const startTime = new Date();
             this.selectedCountryPics.map((pic, idx) => {
                 if (!pic.image.complete) {
                     pic.image.onload = () => {
+                        const endTime = new Date();
+                        let timeDiff = endTime.getTime() - startTime.getTime();
+                        timeDiff /= 1000;
+                        if (Math.round(timeDiff) > 5) {
+                            console.log(timeDiff);
+                            this.isLongLoading = true;
+                        } else {
+                            console.log(timeDiff);
+
+                            this.isLongLoading = false;
+                        }
                         loadAll[idx] = true;
                         if (loadAll.every(i => i === true)) {
                             this.loaded = true;

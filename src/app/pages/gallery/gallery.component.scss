@@ -1,4 +1,4 @@
-mat-progress-spinner {
+mat-progress-spinner, .loader-text {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -11,6 +11,11 @@ mat-progress-spinner {
   }
 }
 
+.loader-text {
+  color: #fff;
+  text-align: center;
+  top: 55px;
+}
 .header {
   margin-top: -100px;
   padding-bottom: 190px;

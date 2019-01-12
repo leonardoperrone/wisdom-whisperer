@@ -1,4 +1,4 @@
-mat-progress-spinner {
+mat-progress-spinner, .loader-text {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -6,8 +6,13 @@ mat-progress-spinner {
   right: 0;
   left: 0;
   margin: auto; }
-  mat-progress-spinner::ng-deep circle {
+  mat-progress-spinner::ng-deep circle, .loader-text::ng-deep circle {
     stroke: #fff; }
+
+.loader-text {
+  color: #fff;
+  text-align: center;
+  top: 55px; }
 
 .header {
   margin-top: -100px;

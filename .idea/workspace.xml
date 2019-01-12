@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2331a5ae-38ba-47f4-8091-044925d7b976" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/common/loader/loader.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/loader/loader.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -49,16 +51,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="HTML" value="44" />
+          <entry key="HTML" value="45" />
           <entry key="Image" value="5" />
-          <entry key="JSON" value="13" />
+          <entry key="JSON" value="14" />
           <entry key="JavaScript" value="7" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="2" />
           <entry key="SCSS" value="47" />
           <entry key="SVG" value="3" />
-          <entry key="TypeScript" value="78" />
+          <entry key="TypeScript" value="79" />
           <entry key="tsconfig" value="6" />
         </counts>
       </usages-collector>
@@ -80,10 +82,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="38" />
-          <entry key="HTML" value="2339" />
+          <entry key="HTML" value="2500" />
           <entry key="JSON" value="72" />
-          <entry key="SCSS" value="2568" />
-          <entry key="TypeScript" value="4819" />
+          <entry key="SCSS" value="2589" />
+          <entry key="TypeScript" value="5030" />
         </counts>
       </usages-collector>
     </session>
@@ -95,8 +97,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="47">
-                  <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+                <state relative-caret-position="218">
+                  <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -119,20 +121,29 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/app.component.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+                <state relative-caret-position="315">
+                  <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles.scss">
+            <entry file="file://$PROJECT_DIR$/src/app/common/loader/loader.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+                <state relative-caret-position="15">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/node_modules/@angular/material/typings/esm5/progress-spinner/index.metadata.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="227">
+                  <caret column="2262" selection-start-column="2262" selection-end-column="2262" />
                 </state>
               </provider>
             </entry>
@@ -141,7 +152,7 @@
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="227">
-                  <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+                  <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -158,11 +169,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+                <state relative-caret-position="392">
+                  <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -176,18 +187,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -195,8 +194,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1399">
-                  <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+                <state relative-caret-position="421">
+                  <caret line="124" column="25" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#84#0" expanded="true" />
                   </folding>
@@ -205,10 +204,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+            <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+                <state relative-caret-position="299">
+                  <caret line="793" column="4" selection-start-line="793" selection-start-column="4" selection-end-line="793" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -245,8 +244,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="652">
-                  <caret line="59" selection-start-line="59" selection-end-line="60" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -264,7 +263,7 @@
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="343">
-                  <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+                  <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -327,12 +326,12 @@
       <find>image</find>
       <find>onWindow</find>
       <find>onWindowScroll</find>
-      <find>open</find>
-      <find>images</find>
-      <find>(click</find>
       <find>id=</find>
       <find>nav-link-sm</find>
+      <find>(click</find>
+      <find>images</find>
       <find>styl</find>
+      <find>open</find>
     </findStrings>
     <replaceStrings>
       <replace>wisdom-whisperer:</replace>
@@ -361,7 +360,6 @@
         <option value="$PROJECT_DIR$/src/app/common/footer/footer.component.scss" />
         <option value="$PROJECT_DIR$/src/app/pages/about/about.component.html" />
         <option value="$PROJECT_DIR$/src/app/pages/about/about.component.scss" />
-        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/styles.scss" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.scss" />
@@ -369,6 +367,8 @@
         <option value="$PROJECT_DIR$/src/app/models/image.model.ts" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.css" />
+        <option value="$PROJECT_DIR$/src/app/common/loader/loader.component.html" />
+        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" />
         <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" />
         <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" />
       </list>
@@ -444,6 +444,46 @@
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
               <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@angular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@angular" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@angular" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+              <item name="typings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@angular" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+              <item name="typings" type="462c0819:PsiDirectoryNode" />
+              <item name="esm5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="@angular" type="462c0819:PsiDirectoryNode" />
+              <item name="material" type="462c0819:PsiDirectoryNode" />
+              <item name="typings" type="462c0819:PsiDirectoryNode" />
+              <item name="esm5" type="462c0819:PsiDirectoryNode" />
+              <item name="progress-spinner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
               <item name="typescript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -477,16 +517,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="image-modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="image-modal" type="462c0819:PsiDirectoryNode" />
-              <item name="image-modal.component.scss" type="620a8d5e:NestingTreeNode" />
+              <item name="loader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
@@ -543,7 +574,7 @@
     <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file:///Users/leonardoperrone/Documents/GitHub/wisdom-whisperer/functions/.gitignore" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547253120726" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547256552740" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -614,12 +645,12 @@
       <workItem from="1541544669045" duration="30180000" />
       <workItem from="1541786939626" duration="22129000" />
       <workItem from="1545084450767" duration="627000" />
-      <workItem from="1545085287501" duration="43693000" />
+      <workItem from="1545085287501" duration="46936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118781000" />
+    <option name="totallyTimeSpent" value="122024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="979" extended-state="0" />
@@ -696,9 +727,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/functions/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -784,13 +812,6 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/material/typings/esm5/progress-spinner/index.metadata.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret column="2262" selection-start-column="2262" selection-end-column="2262" />
         </state>
       </provider>
     </entry>
@@ -958,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="566" column="21" selection-start-line="566" selection-start-column="21" selection-end-line="566" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -978,13 +992,6 @@
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1005,24 +1012,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/loader/loader.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/material/typings/esm5/progress-spinner/index.metadata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret column="2262" selection-start-column="2262" selection-end-column="2262" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="793" column="4" selection-start-line="793" selection-start-column="4" selection-end-line="793" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        <state relative-caret-position="392">
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
         </state>
       </provider>
     </entry>
