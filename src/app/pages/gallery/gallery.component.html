@@ -27,19 +27,19 @@
     </p>
   </ng-container>
   <ng-container *ngIf="loaded">
-    <div class="column" *ngFor="let i of selectedCountryPics">
+    <div class="column" *ngFor="let i of selectedGallery">
       <ng-container *ngIf="selectedCountry!=='TRAVELS'">
         <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
-        <img class="banner-image" [src]="i.image.src" (click)="innerWidth < 1024 ? '' : openModal(i.index)">
+        <img class="banner-image" [src]="i.urlThumbnailPic" (click)="innerWidth < 1024 ? '' : openModal(i.index)">
       </ng-container>
       <ng-container *ngIf="selectedCountry==='TRAVELS'">
-        <img id="img-gallery" class="banner-image" [src]="i.image.src" [routerLink]="['/home', i.name]">
-        <div class="centered" *ngIf="i.name" [routerLink]="['/home', i.name]">{{i.name.toUpperCase()}}</div>
+        <img id="img-gallery" class="banner-image" [src]="i.urlMainPic" [routerLink]="['/home', i.country]">
+        <div class="centered" *ngIf="i.countryRep" [routerLink]="['/home', i.countryRep]">{{i.countryRep.toUpperCase()}}</div>
       </ng-container>
     </div>
   </ng-container>
 </div>
 
-<app-image-modal *ngIf="selectedCountryPics" [innerWidth]="innerWidth" [(visible)]="showDialog"
-                 [(currentIndex)]="selectedImageIndex" [images]="selectedCountryPics">
+<app-image-modal *ngIf="selectedGallery" [innerWidth]="innerWidth" [(visible)]="showDialog"
+                 [(currentIndex)]="selectedImageIndex" [images]="selectedGallery">
 </app-image-modal>

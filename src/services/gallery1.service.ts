@@ -2,9 +2,8 @@ import {Injectable} from '@angular/core';
 import {Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import {Picture} from '../models/gallery.model';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { map } from "rxjs/operators";
-import { tap } from "rxjs/operators";
 
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
@@ -37,4 +36,10 @@ export class Gallery1Service {
   public getCourses(listPath): Observable<any[]> {
     return this.db.list(listPath).valueChanges();
   }
+
+  getCountries(): AngularFireList<String> {
+    console.log(this.db.list('countries'));
+    return this.db.list('countries');
+  }
+
 }

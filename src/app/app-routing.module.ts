@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {GalleryComponent} from './pages/gallery/gallery.component';
-import {AboutComponent} from './pages/about/about.component';
-import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
-import {ContactComponent} from './pages/contact/contact.component';
-import {CommonModule} from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AboutComponent } from './pages/about/about.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { CommonModule } from '@angular/common';
 
 
 const routes: Routes = [

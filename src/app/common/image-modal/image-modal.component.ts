@@ -1,6 +1,6 @@
-import {Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, Renderer2, SimpleChanges} from '@angular/core';
-import {animate, style, transition, trigger} from '@angular/animations';
-import {GalleryImage} from '../../models/image.model';
+import { Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, Renderer2, SimpleChanges } from '@angular/core';
+import { animate, style, transition, trigger } from '@angular/animations';
+import { ImageGallery } from '../../../models/gallery.model';
 
 @Component({
     selector: 'app-image-modal',
@@ -22,8 +22,8 @@ export class ImageModalComponent implements OnInit, OnChanges {
     @Input() closable = true;
     @Input() visible = false;
     @Input() currentIndex = 0;
-    @Input() images: GalleryImage[] = [];
-    @Input() currentImage: GalleryImage = null;
+    @Input() images: ImageGallery[] = [];
+    @Input() currentImage: ImageGallery = null;
     @Input() innerWidth: number;
     @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
     @Output() currentIndexChange: EventEmitter<number> = new EventEmitter<number>();
@@ -46,7 +46,7 @@ export class ImageModalComponent implements OnInit, OnChanges {
     }
 
     ngOnChanges(changes: SimpleChanges) {
-            this.currentImage = this.images[this.currentIndex];
+        this.currentImage = this.images.find(img => img.index === this.currentIndex);
     }
 
     closeModal() {
