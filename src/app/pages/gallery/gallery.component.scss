@@ -6,6 +6,7 @@ mat-progress-spinner, .loader-text {
   right: 0;
   left: 0;
   margin: auto;
+
   &::ng-deep circle {
     stroke: #fff;
   }
@@ -16,6 +17,7 @@ mat-progress-spinner, .loader-text {
   text-align: center;
   top: 55px;
 }
+
 .header {
   margin-top: -100px;
   padding-bottom: 190px;
@@ -27,7 +29,7 @@ mat-progress-spinner, .loader-text {
 }
 
 .title-home {
- padding-top: 190px;
+  padding-top: 190px;
 }
 
 .header-quote-container {
@@ -43,10 +45,12 @@ mat-progress-spinner, .loader-text {
     bottom: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     &:hover {
       opacity: 0.7;
     }
   }
+
   img {
     width: 100%;
   }
@@ -106,12 +110,15 @@ mat-progress-spinner, .loader-text {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 100;
   letter-spacing: 5px;
+
   img {
     width: 100%;
+
     &.banner-image {
       cursor: pointer;
 
     }
+
     &.banner-image:hover {
       opacity: 0.5;
     }
@@ -125,6 +132,7 @@ mat-progress-spinner, .loader-text {
   transform: translate(-50%, -50%);
   cursor: pointer;
   line-height: 0.9;
+
   &:after {
     border-bottom: 1px solid #fff;
     content: ""; /* This is necessary for the pseudo element to work. */
@@ -132,13 +140,16 @@ mat-progress-spinner, .loader-text {
     margin: 0 auto; /* This will center the border. */
     width: 70%; /* Change this to whatever width you want. */
   }
+
   &:hover {
     opacity: 0.8;
   }
 }
 
 .image-description {
-
+  margin-top: 1rem;
+  font-size: 22px;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {

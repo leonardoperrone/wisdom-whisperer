@@ -10,7 +10,7 @@ import { ImageGallery } from '../../../models/gallery.model';
 @Component({
     selector: 'app-gallery',
     templateUrl: './gallery.component.html',
-    styleUrls: ['./gallery.component.css']
+    styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
     @ViewChild('travel') travel: any;
@@ -192,7 +192,7 @@ export class GalleryComponent implements OnInit {
     }
 
     public goToTravel() {
-        document.getElementById('travel').scrollIntoView({block: 'center', behavior: 'smooth'});
+        document.getElementById('travel').scrollIntoView({block: 'start', behavior: 'smooth'});
     }
 
     public openModal(index: number) {

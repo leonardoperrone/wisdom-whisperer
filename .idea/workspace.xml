@@ -4,17 +4,50 @@
     <bookmark url="file://$PROJECT_DIR$/../lperrone-website/src/app/pages/home/home.component.css" description=".legend-container .legend-svg-logo, .legend-contai..." line="20" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2331a5ae-38ba-47f4-8091-044925d7b976" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="2331a5ae-38ba-47f4-8091-044925d7b976" name="Default Changelist" comment="image loading optimization">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/karma" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/karma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/.gitmodules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/.mailmap" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/.mailmap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/.parallelperf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/AUTHORS.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/AUTHORS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/ThirdPartyNoticeText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/ThirdPartyNoticeText.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/de/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/de/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/es/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/es/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/it/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/it/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/lib.esnext.promise.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/protocol.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/protocol.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/pt-BR/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/pt-BR/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/tsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserver.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/tsserver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/tsserverlibrary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescriptServices.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/typescriptServices.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typescriptServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/typescriptServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/typingsInstaller.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/typingsInstaller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/zh-CN/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/zh-CN/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/lib/zh-TW/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/lib/zh-TW/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/typescript/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/common/loader/loader.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/loader/loader.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/about/about.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/gallery.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/gallery.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/gallery1.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/gallery1.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,18 +58,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5029542">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="199">
-                  <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+                <state relative-caret-position="323">
+                  <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
                   <folding>
                     <element signature="e#0#86#0" expanded="true" />
                   </folding>
@@ -45,54 +77,37 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/services/gallery1.service.ts">
+            <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="205">
+                  <caret line="4554" column="41" selection-start-line="4554" selection-start-column="41" selection-end-line="4554" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts">
+            <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#0#130#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="75">
+                  <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/services/image-gallery.service.spec.ts">
+            <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#0#56#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/services/modal.service.ts">
+            <entry file="file://$PROJECT_DIR$/src/app/pages/about/about.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -100,41 +115,40 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/services/image-gallery.service.ts">
+            <entry file="file://$PROJECT_DIR$/angular.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="45" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#0#43#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="168">
+                  <caret line="81" column="25" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/models/gallery.model.ts">
+            <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+                <state relative-caret-position="373">
+                  <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/app-routing.module.ts">
+            <entry file="file://$PROJECT_DIR$/src/app/common/footer/footer.component.ts">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/common/loader/loader.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="75">
+                  <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -146,8 +160,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="43">
-                  <caret line="109" column="9" selection-start-line="109" selection-start-column="9" selection-end-line="109" selection-end-column="9" />
+                <state relative-caret-position="-148">
+                  <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -155,29 +169,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/services/gallery1.service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="58">
-                  <caret line="15" column="71" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="71" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="225">
+                  <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+                <state relative-caret-position="150">
+                  <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -185,8 +187,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="780">
-                  <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+                <state relative-caret-position="-197">
+                  <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#130#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -194,8 +199,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+                <state relative-caret-position="334">
+                  <caret line="36" selection-start-line="36" selection-end-line="36" />
                 </state>
               </provider>
             </entry>
@@ -211,11 +216,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/models/image.model.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="13" selection-start-column="13" selection-end-column="13" />
+                <state relative-caret-position="90">
+                  <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/models/gallery.model.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -234,14 +248,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>*</find>
-      <find>the:</find>
-      <find>start</find>
       <find>the</find>
       <find>title-ho</find>
       <find>35</find>
       <find>title</find>
-      <find>mat</find>
       <find>a</find>
       <find>wra</find>
       <find>trave</find>
@@ -264,6 +274,10 @@
       <find>styl</find>
       <find>id=</find>
       <find>route</find>
+      <find>type</find>
+      <find>mat</find>
+      <find>currentImage</find>
+      <find>styles</find>
     </findStrings>
     <replaceStrings>
       <replace>wisdom-whisperer:</replace>
@@ -289,30 +303,38 @@
         <option value="$PROJECT_DIR$/src/app/common/footer/footer.component.scss" />
         <option value="$PROJECT_DIR$/src/app/pages/about/about.component.html" />
         <option value="$PROJECT_DIR$/src/app/pages/about/about.component.scss" />
-        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/models/image.model.ts" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.css" />
         <option value="$PROJECT_DIR$/src/app/common/loader/loader.component.html" />
-        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.scss" />
         <option value="$PROJECT_DIR$/src/styles.scss" />
         <option value="$PROJECT_DIR$/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/angular.json" />
         <option value="$PROJECT_DIR$/src/services/gallery1.service.ts" />
         <option value="$PROJECT_DIR$/src/services/image-gallery.service.ts" />
-        <option value="$PROJECT_DIR$/src/models/gallery.model.ts" />
-        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/models/gallery.model.ts" />
         <option value="$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html" />
+        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss" />
+        <option value="$PROJECT_DIR$/angular.json" />
+        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/pages/about/about.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/pages/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/common/loader/loader.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts" />
       </list>
     </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="979" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -320,7 +342,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,31 +359,14 @@
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
               <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular-devkit" type="462c0819:PsiDirectoryNode" />
+              <item name="typescript" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
               <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular-devkit" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular-devkit" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@angular-devkit" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
+              <item name="typescript" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
@@ -387,14 +392,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="image-modal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="loader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
@@ -421,19 +419,13 @@
               <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
               <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wisdom-whisperer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wisdom-whisperer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles.scss" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -523,16 +515,24 @@
       <workItem from="1547929195763" duration="3625000" />
       <workItem from="1553974277238" duration="7330000" />
     </task>
+    <task id="LOCAL-00001" summary="image loading optimization">
+      <created>1562497457910</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562497457910</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135517000" />
+    <option name="totallyTimeSpent" value="139964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15689866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16056167" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -541,16 +541,16 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298611" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4993895" weight="0.3298611" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3287037" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.3298611" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502442" side_tool="true" visible="true" weight="0.25925925" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2534722" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.497558" visible="true" weight="0.25925925" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -601,102 +601,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="image loading optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="image loading optimization" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/common/footer/footer.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/contact/contact.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="13" selection-start-line="27" selection-start-column="6" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/about/about.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/about/about.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/directives/parallax.directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/contact/contact.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="103" lean-forward="true" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/footer/footer.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/about/about.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/about/about.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -718,13 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="913" column="87" selection-start-line="913" selection-start-column="87" selection-end-line="913" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="7414" column="29" lean-forward="true" selection-start-line="7414" selection-start-column="29" selection-end-line="7414" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -789,20 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@angular-devkit/core/src/json/parser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -825,40 +724,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tsconfig.spec.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/gallery1.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -897,51 +772,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es2017.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/core.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-532">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/models/image.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/gallery.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="345">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        <state relative-caret-position="150">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/contact/contact.component.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/about/about.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/contact/contact.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#0#86#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/pages/home/home.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/page-not-found/page-not-found.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        <state relative-caret-position="-197">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
             <element signature="e#0#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/common/image-modal/image-modal.component.html">
+    <entry file="file://$PROJECT_DIR$/src/app/common/footer/footer.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/common/loader/loader.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        <state relative-caret-position="75">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="4554" column="41" selection-start-line="4554" selection-start-column="41" selection-end-line="4554" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/pages/gallery/gallery.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="194" column="71" selection-start-line="194" selection-start-column="71" selection-end-line="194" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
