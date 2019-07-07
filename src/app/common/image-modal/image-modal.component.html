@@ -6,7 +6,7 @@
       </svg>
     </button>
     <div class="current-image-container">
-      <img class="modal-image" [src]="currentImage.urlMainPic">
+      <img class="modal-image" [src]="currentImage.mainImgElement.src">
     </div>
   </div>
   <button *ngIf="closable && innerWidth >= 1200" (click)="closeModal()" aria-label="Close" class="dialog-close-btn">

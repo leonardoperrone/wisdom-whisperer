@@ -28,6 +28,8 @@ export class GalleryComponent implements OnInit {
     public countries: any[];
     public selectedGallery: ImageGallery[] = [];
 
+    public noImages = false;
+
     constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage,
                 private route: ActivatedRoute, private renderer: Renderer2, private galleryService: ImageGalleryService) {
     }
@@ -124,8 +126,26 @@ export class GalleryComponent implements OnInit {
             .subscribe(images => {
                 this.selectedGallery = images.sort((a, b) => {
                     return a.index - b.index;
+                }).map(img => {
+                    img.thumbnailImgElement = new Image();
+                    img.thumbnailImgElement.src = img.urlThumbnailPic;
+                    img.thumbnailImgElement.onload = () => {
+                        this.loaded = true;
+                    };
+                    return img;
                 });
-                this.loaded = true;
+
+                this.selectedGallery.forEach(img => {
+                    img.mainImgElement = new Image();
+                    img.mainImgElement.src = img.urlMainPic;
+                    img.mainImgElement.onload = () => {
+                    };
+                });
+
+                if (this.selectedGallery.length === 0) {
+                    this.noImages = true;
+                    this.loaded = true;
+                }
                 console.log('selected gallery', this.selectedGallery);
             });
 

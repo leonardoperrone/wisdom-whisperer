@@ -15,6 +15,8 @@ export class ImageGallery {
   description: string;
   mainImage: File;
   thumbnailImage: File;
+  mainImgElement: HTMLImageElement;
+  thumbnailImgElement: HTMLImageElement;
   countryRep?: string;
 
 // add thumbnail
