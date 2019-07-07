@@ -18,12 +18,10 @@ export class GalleryComponent implements OnInit {
     countriesMock = ['guatemala', 'belize', 'portugal', 'ireland', 'italy', 'germany', 'france', 'england', 'switzerland', 'studio'];
     public selectedCountryPics: GalleryImage[] = [];
     public loaded = false;
-    public isLongLoading = false;
     public selectedCountry = null;
     public isChevron = true;
     public showDialog = false;
     public selectedImageIndex = 0;
-    public selectedImage = {};
     public innerWidth: any;
     public countries: any[];
     public selectedGallery: ImageGallery[] = [];
@@ -74,41 +72,6 @@ export class GalleryComponent implements OnInit {
                             this.loaded = true;
                             console.log('selected gallery', this.selectedGallery);
                         });
-
-
-                    // const promises = this.countriesMock.map((country, idx) => {
-                    //     if (this.dbStorage.storage.ref().child('banners/' + country + '.jpg')) {
-                    //         const imageStorageRef = this.dbStorage.storage.ref().child('banners/' + country + '.jpg');
-                    //         const image = new Image();
-                    //         return imageStorageRef.getDownloadURL().then(url => {
-                    //             image.src = url;
-                    //             return {index: idx, name: country, url: url, image: image};
-                    //         });
-                    //     }
-                    // });
-                    //
-                    // Promise.all(promises).then((results) => {
-                    //     this.selectedCountryPics = results;
-                    //     const loadAll = new Array(10);
-                    //     loadAll.fill(false);
-                    //     this.selectedCountryPics.map((pic, idx) => {
-                    //         if (!pic.image.complete) {
-                    //             pic.image.onload = () => {
-                    //                 loadAll[idx] = true;
-                    //                 if (loadAll.every(i => i === true)) {
-                    //                     this.loaded = true;
-                    //                 }
-                    //             };
-                    //         } else {
-                    //             loadAll[idx] = true;
-                    //             if (loadAll.every(i => i === true)) {
-                    //                 this.loaded = true;
-                    //             }
-                    //         }
-                    //     });
-                    // });
-
-
                 }
             }
         );
@@ -148,47 +111,6 @@ export class GalleryComponent implements OnInit {
                 }
                 console.log('selected gallery', this.selectedGallery);
             });
-
-        // const promises = this.countriesMock.map((el, i) => {
-        //     if (this.dbStorage.storage.ref().child(country + '/' + (i + 1) + '.jpg')) {
-        //         const imageStorageRef = this.dbStorage.storage.ref().child(country + '/' + (i + 1).toString() + '.jpg');
-        //         const image = new Image();
-        //         return imageStorageRef.getDownloadURL().then(url => {
-        //             image.src = url;
-        //             return {index: i, name: country, url: url, image: image};
-        //         });
-        //     }
-        // });
-        // Promise.all(promises).then((results) => {
-        //     this.selectedCountryPics = results;
-        //     const loadAll = new Array(10);
-        //     loadAll.fill(false);
-        //     const startTime = new Date();
-        //     this.selectedCountryPics.map((pic, idx) => {
-        //         if (!pic.image.complete) {
-        //             pic.image.onload = () => {
-        //                 const endTime = new Date();
-        //                 let timeDiff = endTime.getTime() - startTime.getTime();
-        //                 timeDiff /= 1000;
-        //                 if (Math.round(timeDiff) > 5) {
-        //                     this.isLongLoading = true;
-        //                 } else {
-        //
-        //                     this.isLongLoading = false;
-        //                 }
-        //                 loadAll[idx] = true;
-        //                 if (loadAll.every(i => i === true)) {
-        //                     this.loaded = true;
-        //                 }
-        //             };
-        //         } else {
-        //             loadAll[idx] = true;
-        //             if (loadAll.every(i => i === true)) {
-        //                 this.loaded = true;
-        //             }
-        //         }
-        //     });
-        // });
     }
 
     public goToTravel() {

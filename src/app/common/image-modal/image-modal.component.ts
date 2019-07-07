@@ -23,10 +23,11 @@ export class ImageModalComponent implements OnInit, OnChanges {
     @Input() visible = false;
     @Input() currentIndex = 0;
     @Input() images: ImageGallery[] = [];
-    @Input() currentImage: ImageGallery = null;
     @Input() innerWidth: number;
     @Output() visibleChange: EventEmitter<boolean> = new EventEmitter<boolean>();
     @Output() currentIndexChange: EventEmitter<number> = new EventEmitter<number>();
+
+    public currentImage: ImageGallery = null;
 
     constructor(private renderer: Renderer2) {
     }
