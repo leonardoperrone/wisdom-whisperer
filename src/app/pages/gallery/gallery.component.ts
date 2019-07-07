@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireStorage } from 'angularfire2/storage';
 import { ActivatedRoute } from '@angular/router';
@@ -12,10 +12,12 @@ import { ImageGallery } from '../../../models/gallery.model';
     templateUrl: './gallery.component.html',
     styleUrls: ['./gallery.component.scss']
 })
-export class GalleryComponent implements OnInit {
+export class GalleryComponent implements OnInit, AfterViewInit {
     @ViewChild('travel') travel: any;
+    @ViewChild('placeholder') placeholder: ElementRef;
+    @ViewChild('background') background: ElementRef;
 
-    countriesMock = ['guatemala', 'belize', 'portugal', 'ireland', 'italy', 'germany', 'france', 'england', 'switzerland', 'studio'];
+    // countriesMock = ['guatemala', 'belize', 'portugal', 'ireland', 'italy', 'germany', 'france', 'england', 'switzerland', 'studio'];
     public selectedCountryPics: GalleryImage[] = [];
     public loaded = false;
     public selectedCountry = null;
@@ -23,10 +25,11 @@ export class GalleryComponent implements OnInit {
     public showDialog = false;
     public selectedImageIndex = 0;
     public innerWidth: any;
-    public countries: any[];
+    // public countries: any[];
     public selectedGallery: ImageGallery[] = [];
 
     public noImages = false;
+    public isBackgorundImgLoaded = false;
 
     constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage,
                 private route: ActivatedRoute, private renderer: Renderer2, private galleryService: ImageGalleryService) {
@@ -48,10 +51,6 @@ export class GalleryComponent implements OnInit {
 
     ngOnInit() {
         this.innerWidth = window.innerWidth;
-
-        this.galleryService.getCountries().valueChanges().subscribe(countries => {
-            this.countries = countries;
-        });
 
         this.route.paramMap.subscribe(params => {
                 const c = params.get('country');
@@ -75,6 +74,23 @@ export class GalleryComponent implements OnInit {
                 }
             }
         );
+    }
+
+    ngAfterViewInit() {
+        const imgSmall = new Image();
+        imgSmall.src = this.placeholder.nativeElement.src;
+        imgSmall.onload = () => {
+            this.placeholder.nativeElement.classList.remove('background-hidden');
+        };
+        const backgroundImg = new Image();
+
+        backgroundImg.src = this.background.nativeElement.src;
+        backgroundImg.onload = () => {
+            this.placeholder.nativeElement.classList.add('background-hidden');
+            this.background.nativeElement.classList.remove('background-hidden');
+        };
+
+        console.log('placeholder', this.placeholder.nativeElement);
     }
 
     countrySelected(country: string) {
@@ -101,8 +117,9 @@ export class GalleryComponent implements OnInit {
                 this.selectedGallery.forEach(img => {
                     img.mainImgElement = new Image();
                     img.mainImgElement.src = img.urlMainPic;
-                    img.mainImgElement.onload = () => {
-                    };
+                    // img.mainImgElement.onload = () => {
+                    //
+                    // };
                 });
 
                 if (this.selectedGallery.length === 0) {

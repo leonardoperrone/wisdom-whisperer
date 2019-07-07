@@ -1,7 +1,8 @@
 <div [class]="selectedCountry==='TRAVELS' ? 'header' : 'header-gallery'">
-  <ng-container *ngIf="selectedCountry==='TRAVELS' && loaded">
+  <ng-container *ngIf="selectedCountry==='TRAVELS'">
     <div class="header-quote-container">
-      <img src="assets/quote-background.jpg">
+      <img #background class="background-hidden" src="assets/quote-background.jpg">
+      <img #placeholder class="background-hidden background-img-small" src="assets/quote-background-min.jpg" >
       <div class="header-quote">
         <h2 class="quote">See what I see,
           <br>

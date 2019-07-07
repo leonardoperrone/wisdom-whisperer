@@ -10,7 +10,6 @@ import {RouterModule} from '@angular/router';
 import {Gallery1Service} from '../services/gallery1.service';
 import {environment} from '../environments/environment';
 import {AngularFireStorageModule} from 'angularfire2/storage';
-import {LoaderComponent} from './common/loader/loader.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatProgressSpinnerModule} from '@angular/material';
 import {AboutComponent} from './pages/about/about.component';
@@ -34,7 +33,6 @@ import { ImageModalComponent } from './common/image-modal/image-modal.component'
         GalleryComponent,
         HomeComponent,
         AboutComponent,
-        LoaderComponent,
         PageNotFoundComponent,
         ContactComponent,
         ModalComponent,
