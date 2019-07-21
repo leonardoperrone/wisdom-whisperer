@@ -1,4 +1,16 @@
-import { Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, Renderer2, SimpleChanges } from '@angular/core';
+import {
+    Component,
+    ElementRef,
+    EventEmitter,
+    HostListener,
+    Input,
+    OnChanges,
+    OnInit,
+    Output,
+    Renderer2,
+    SimpleChanges,
+    ViewChild
+} from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { ImageGallery } from '../../../models/gallery.model';
 
@@ -19,6 +31,8 @@ import { ImageGallery } from '../../../models/gallery.model';
     ]
 })
 export class ImageModalComponent implements OnInit, OnChanges {
+    @ViewChild('imageContainer') imageContainer: ElementRef;
+    @ViewChild('buttons') buttons: ElementRef;
     @Input() closable = true;
     @Input() visible = false;
     @Input() currentIndex = 0;
@@ -28,6 +42,8 @@ export class ImageModalComponent implements OnInit, OnChanges {
     @Output() currentIndexChange: EventEmitter<number> = new EventEmitter<number>();
 
     public currentImage: ImageGallery = null;
+
+    public isImgHorizontal = true;
 
     constructor(private renderer: Renderer2) {
     }
@@ -48,6 +64,13 @@ export class ImageModalComponent implements OnInit, OnChanges {
 
     ngOnChanges(changes: SimpleChanges) {
         this.currentImage = this.images.find(img => img.index === this.currentIndex);
+        this.updateImgContainerClass(this.currentImage);
+        // isImgHorizontal();
+        // if (this.currentImage) {
+        //     this.isImgHorizontal = this.currentImage.mainImgElement.width > this.currentImage.mainImgElement.height;
+        // }
+
+        console.log('current image', this.currentImage);
     }
 
     closeModal() {
@@ -61,11 +84,29 @@ export class ImageModalComponent implements OnInit, OnChanges {
     previousImage() {
         this.currentIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.images.length - 1;
         this.currentImage = this.images[this.currentIndex];
+        this.updateImgContainerClass(this.currentImage);
+        console.log('current image', this.currentImage);
+
     }
 
     nextImage() {
         this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
         this.currentImage = this.images[this.currentIndex];
+        this.updateImgContainerClass(this.currentImage);
+        console.log('current image', this.currentImage);
+
     }
 
+    outsideClicked($event) {
+        if (!$event.path.includes(this.imageContainer.nativeElement) &&
+            !$event.path.includes(this.buttons.nativeElement)) {
+            this.closeModal();
+        }
+    }
+
+    updateImgContainerClass(image: ImageGallery): void {
+        if (image && image.mainImgElement) {
+            this.isImgHorizontal = image.mainImgElement.width > image.mainImgElement.height;
+        }
+    }
 }

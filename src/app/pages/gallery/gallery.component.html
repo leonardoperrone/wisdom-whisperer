@@ -1,45 +1,48 @@
 <div [class]="selectedCountry==='TRAVELS' ? 'header' : 'header-gallery'">
   <ng-container *ngIf="selectedCountry==='TRAVELS'">
     <div class="header-quote-container">
-      <img #background class="background-hidden" src="assets/quote-background.jpg">
-      <img #placeholder class="background-hidden background-img-small" src="assets/quote-background-min.jpg" >
+      <img #background [ngClass]="isBackgroundImgLoaded ? '' : 'background-hidden'"
+           src="assets/quote-background.jpg" alt="cabin-in-woods">
+      <img #placeholder [ngClass]="!isBackgroundPlaceholderImgLoaded ? '' : 'background-hidden'" class="background-img-small"
+           src="assets/quote-background-min.jpg" alt="cabin-in-woods-blurred">
       <div class="header-quote">
         <h2 class="quote">See what I see,
           <br>
           this is my journey.
         </h2>
       </div>
-      <a *ngIf="isChevron" id="chevron-down" (click)="goToTravel()"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
+      <a (click)="goToTravel()" *ngIf="isChevron" id="chevron-down"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
     </div>
     <!--<div class="footprints">-->
     <!--<img src="../../../assets/footprints-empty.png">-->
     <!--</div>-->
   </ng-container>
 
-  <h2 id="travel" [ngClass]="selectedCountry==='TRAVELS' ? 'title-home' : 'title'"> {{selectedCountry | uppercase}}</h2>
+  <h2 [ngClass]="selectedCountry==='TRAVELS' ? 'title-home' : 'title'" id="travel"> {{selectedCountry | uppercase}}</h2>
 </div>
 
 <div [ngClass]="selectedCountry==='TRAVELS' ? 'grid-main' : 'grid-pic-gallery'">
   <ng-container *ngIf="!loaded">
-    <mat-progress-spinner [value]="75" [strokeWidth]="3" [diameter]="50"
-                          [mode]="'indeterminate'"></mat-progress-spinner>
+    <mat-progress-spinner [diameter]="50" [mode]="'indeterminate'" [strokeWidth]="3"
+                          [value]="75"></mat-progress-spinner>
   </ng-container>
   <ng-container *ngIf="loaded">
     <p *ngIf="noImages" class="loader-text"> No available images for this country at this time</p>
-    <div class="column" *ngFor="let i of selectedGallery">
+    <div *ngFor="let i of selectedGallery" class="column">
       <ng-container *ngIf="selectedCountry!=='TRAVELS'">
         <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
-        <img class="banner-image" [src]="i.urlThumbnailPic" (click)="innerWidth < 1024 ? '' : openModal(i.index)">
+        <img (click)="openModal(i.index)" [src]="i.urlThumbnailPic" class="banner-image" alt="thumbnail-pic">
         <p class="image-description"> {{i.description}}</p>
       </ng-container>
       <ng-container *ngIf="selectedCountry==='TRAVELS'">
-        <img id="img-gallery" class="banner-image" [src]="i.urlMainPic" [routerLink]="['/home', i.countryRep]">
-        <div class="centered" *ngIf="i.countryRep" [routerLink]="['/home', i.countryRep]">{{i.countryRep.toUpperCase()}}</div>
+        <img [routerLink]="['/home', i.countryRep]" [src]="i.urlMainPic" class="banner-image" id="img-gallery" alt="country-pic">
+        <div *ngIf="i.countryRep" [routerLink]="['/home', i.countryRep]"
+             class="centered">{{i.countryRep | uppercase}}</div>
       </ng-container>
     </div>
   </ng-container>
 </div>
 
-<app-image-modal *ngIf="selectedGallery" [innerWidth]="innerWidth" [(visible)]="showDialog"
-                 [(currentIndex)]="selectedImageIndex" [images]="selectedGallery">
+<app-image-modal *ngIf="selectedGallery" [(currentIndex)]="selectedImageIndex" [(visible)]="showDialog"
+                 [images]="selectedGallery" [innerWidth]="innerWidth">
 </app-image-modal>

@@ -4,6 +4,16 @@ body {
   background: #1f1f1f;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
 .nav-large {
   background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
@@ -80,55 +90,55 @@ a, img {
   -o-transition: .3s all;
 }
 
-//
-//// Modal
-///* MODAL STYLES
-//-------------------------------*/
-//modal {
-//  /* modals are hidden by default */
-//  display: none;
-//
-//  .modal {
-//    /* modal container fixed across whole screen */
-//    position: fixed;
-//    top: 0;
-//    right: 0;
-//    bottom: 0;
-//    left: 0;
-//
-//    /* z-index must be higher than .modal-background */
-//    z-index: 1000;
-//
-//    /* enables scrolling for tall modals */
-//    overflow: auto;
-//
-//    .modal-body {
-//      padding: 20px;
-//      background: #fff;
-//
-//      /* margin exposes part of the modal background */
-//      margin: 40px;
-//    }
-//  }
-//
-//  .modal-background {
-//    /* modal background fixed across whole screen */
-//    position: fixed;
-//    top: 0;
-//    right: 0;
-//    bottom: 0;
-//    left: 0;
-//
-//    /* semi-transparent black  */
-//    background-color: #000;
-//    opacity: 0.75;
-//
-//    /* z-index must be below .modal and above everything else  */
-//    z-index: 900;
-//  }
-//}
-//
-//body.modal-open {
-//  /* body overflow is hidden to hide main scrollbar when modal window is open */
-//  overflow: hidden;
-//}
+@media screen and (min-width: 320px) {
+  .navbar {
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+  }
+
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-large {
+    background-color: #1f1f1f;
+
+    .navbar-brand {
+      margin-top: 10px;
+      margin-bottom: 0;
+      width: 80%;
+      margin-right: 0;
+    }
+    .logo-image {
+      width: 85%;
+    }
+    .nav-subtitle {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1390px) {
+
+}
+
+@media screen and (min-width: 1450px) {
+
+}
+
+@media screen and (min-width: 1490px) {
+}
+
+@media screen and (min-width: 1550px) {
+
+}
+
+@media screen and (min-width: 1600px) {
+}
+

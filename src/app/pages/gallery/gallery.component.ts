@@ -29,7 +29,8 @@ export class GalleryComponent implements OnInit, AfterViewInit {
     public selectedGallery: ImageGallery[] = [];
 
     public noImages = false;
-    public isBackgorundImgLoaded = false;
+    public isBackgroundImgLoaded = false;
+    public isBackgroundPlaceholderImgLoaded = false;
 
     constructor(private db: AngularFireDatabase, private dbStorage: AngularFireStorage,
                 private route: ActivatedRoute, private renderer: Renderer2, private galleryService: ImageGalleryService) {
@@ -37,11 +38,7 @@ export class GalleryComponent implements OnInit, AfterViewInit {
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        if (window.scrollY >= 20) {
-            this.isChevron = false;
-        } else {
-            this.isChevron = true;
-        }
+        this.isChevron = window.scrollY < 20;
     }
 
     @HostListener('window:resize', ['$event'])
@@ -77,20 +74,24 @@ export class GalleryComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        const imgSmall = new Image();
-        imgSmall.src = this.placeholder.nativeElement.src;
-        imgSmall.onload = () => {
-            this.placeholder.nativeElement.classList.remove('background-hidden');
-        };
-        const backgroundImg = new Image();
+        if (this.selectedCountry === 'TRAVELS') {
 
-        backgroundImg.src = this.background.nativeElement.src;
-        backgroundImg.onload = () => {
-            this.placeholder.nativeElement.classList.add('background-hidden');
-            this.background.nativeElement.classList.remove('background-hidden');
-        };
+            const imgSmall = new Image();
+            imgSmall.src = this.placeholder.nativeElement.src;
+            imgSmall.onload = () => {
+                this.isBackgroundPlaceholderImgLoaded = true;
+                // this.placeholder.nativeElement.classList.remove('background-hidden');
+            };
+            const backgroundImg = new Image();
 
-        console.log('placeholder', this.placeholder.nativeElement);
+            backgroundImg.src = this.background.nativeElement.src;
+            backgroundImg.onload = () => {
+                this.isBackgroundImgLoaded = true;
+                // this.placeholder.nativeElement.classList.add('background-hidden');
+                // this.background.nativeElement.classList.remove('background-hidden');
+            };
+        }
+        // console.log('placeholder', this.placeholder.nativeElement);
     }
 
     countrySelected(country: string) {
@@ -135,11 +136,13 @@ export class GalleryComponent implements OnInit, AfterViewInit {
     }
 
     public openModal(index: number) {
-        this.selectedImageIndex = index;
-        // this.selectedImage = _.find(this.selectedCountryPics, {'index': index});
-        // this.selectedImage = this.selectedCountryPics[index];
-        this.showDialog = !this.showDialog;
-        this.renderer.addClass(document.body, 'modal-open');
+        if (this.innerWidth >= 1024) {
+            this.selectedImageIndex = index;
+            // this.selectedImage = _.find(this.selectedCountryPics, {'index': index});
+            // this.selectedImage = this.selectedCountryPics[index];
+            this.showDialog = !this.showDialog;
+            this.renderer.addClass(document.body, 'modal-open');
+        }
 
     }
 }

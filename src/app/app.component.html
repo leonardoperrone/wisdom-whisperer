@@ -3,8 +3,8 @@
     <img class="logo-image" src="assets/marci-logo-signature.png" alt="Logo Website">
     <p class="nav-subtitle">Travel and Landscape Photography</p>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button #togglerButton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu(togglerButton)">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
@@ -19,6 +19,7 @@
 
 <main class="container">
   <router-outlet></router-outlet>
+  <div *ngIf="innerWidth <= 768 && isNavOpen" class="overlay"></div>
 </main>
 
 <app-footer></app-footer>
