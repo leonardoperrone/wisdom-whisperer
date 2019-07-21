@@ -5,7 +5,7 @@
            src="assets/quote-background.jpg" alt="cabin-in-woods">
       <img #placeholder [ngClass]="!isBackgroundPlaceholderImgLoaded ? '' : 'background-hidden'" class="background-img-small"
            src="assets/quote-background-min.jpg" alt="cabin-in-woods-blurred">
-      <div class="header-quote">
+      <div *ngIf="isBackgroundPlaceholderImgLoaded" class="header-quote">
         <h2 class="quote">See what I see,
           <br>
           this is my journey.

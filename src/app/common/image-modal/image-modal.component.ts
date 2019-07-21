@@ -65,12 +65,6 @@ export class ImageModalComponent implements OnInit, OnChanges {
     ngOnChanges(changes: SimpleChanges) {
         this.currentImage = this.images.find(img => img.index === this.currentIndex);
         this.updateImgContainerClass(this.currentImage);
-        // isImgHorizontal();
-        // if (this.currentImage) {
-        //     this.isImgHorizontal = this.currentImage.mainImgElement.width > this.currentImage.mainImgElement.height;
-        // }
-
-        console.log('current image', this.currentImage);
     }
 
     closeModal() {
@@ -85,15 +79,12 @@ export class ImageModalComponent implements OnInit, OnChanges {
         this.currentIndex = this.currentIndex > 0 ? this.currentIndex - 1 : this.images.length - 1;
         this.currentImage = this.images[this.currentIndex];
         this.updateImgContainerClass(this.currentImage);
-        console.log('current image', this.currentImage);
-
     }
 
     nextImage() {
         this.currentIndex = this.currentIndex < this.images.length - 1 ? this.currentIndex + 1 : 0;
         this.currentImage = this.images[this.currentIndex];
         this.updateImgContainerClass(this.currentImage);
-        console.log('current image', this.currentImage);
 
     }
 

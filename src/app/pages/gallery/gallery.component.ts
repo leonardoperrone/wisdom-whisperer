@@ -38,17 +38,18 @@ export class GalleryComponent implements OnInit, AfterViewInit {
 
     @HostListener('window:scroll', [])
     onWindowScroll() {
-        this.isChevron = window.scrollY < 20;
+        this.isChevron = window.scrollY < 20 && this.innerWidth >= 768;
     }
 
     @HostListener('window:resize', ['$event'])
     onResize(event) {
         this.innerWidth = window.innerWidth;
+        this.isChevron = this.innerWidth >= 768;
     }
 
     ngOnInit() {
         this.innerWidth = window.innerWidth;
-
+        this.isChevron = this.innerWidth >= 768;
         this.route.paramMap.subscribe(params => {
                 const c = params.get('country');
                 if (c) {
@@ -127,7 +128,6 @@ export class GalleryComponent implements OnInit, AfterViewInit {
                     this.noImages = true;
                     this.loaded = true;
                 }
-                console.log('selected gallery', this.selectedGallery);
             });
     }
 
@@ -138,8 +138,6 @@ export class GalleryComponent implements OnInit, AfterViewInit {
     public openModal(index: number) {
         if (this.innerWidth >= 1024) {
             this.selectedImageIndex = index;
-            // this.selectedImage = _.find(this.selectedCountryPics, {'index': index});
-            // this.selectedImage = this.selectedCountryPics[index];
             this.showDialog = !this.showDialog;
             this.renderer.addClass(document.body, 'modal-open');
         }

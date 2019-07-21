@@ -1,5 +1,4 @@
 .header {
-  padding-bottom: 30px;
   padding-top: 140px;
 }
 
@@ -34,22 +33,6 @@
 .about-me-quote {
   float: right;
 }
-
-//.profile-pic {
-//  width: 500px;
-//  display: inline-block;
-//  img {
-//    //width: 100%;
-//    width: 30%;
-//    //height: auto;
-//    //min-width: 500px;
-//    float: left;
-//    margin-right:2rem;
-//    border-radius: 50%;
-//    -webkit-shape-outside:circle();
-//    shape-outside:circle();
-//  }
-//}
 
 .wrap {
   margin: auto;
@@ -112,15 +95,10 @@ p {
   clear: left;
 }
 .col1 .inner {
-  //margin-right: 360px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .col2 .inner {
-  //margin-left: 330px;
-  padding-top: 100px;
-}
-.col2 {
-  //margin-left: -540px;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 800px) {
@@ -150,5 +128,11 @@ p {
 @media screen and (max-width: 480px) {
   .col1:before {
     display: none;
+  }
+  .col1 .inner {
+    padding-top: 30px;
+  }
+  .wrap {
+    line-height: 30px;
   }
 }

@@ -90,7 +90,7 @@ a, img {
   -o-transition: .3s all;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
   .navbar {
     justify-content: space-between;
     text-align: center;
@@ -107,7 +107,6 @@ a, img {
 
     .navbar-brand {
       margin-top: 10px;
-      margin-bottom: 0;
       width: 80%;
       margin-right: 0;
     }
@@ -120,8 +119,17 @@ a, img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-
+@media screen and (max-width: 1200px) {
+  .nav-large .navbar-brand {
+    margin-bottom: 0;
+  }
+  .nav-large {
+    font-size: 18px;
+    .navbar-nav .nav-link {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
 }
 
 @media screen and (min-width: 1390px) {

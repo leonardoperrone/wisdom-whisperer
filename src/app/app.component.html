@@ -3,16 +3,16 @@
     <img class="logo-image" src="assets/marci-logo-signature.png" alt="Logo Website">
     <p class="nav-subtitle">Travel and Landscape Photography</p>
   </a>
-  <button #togglerButton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu(togglerButton)">
+  <button #toggleButton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu(toggleButton)">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+  <div #navbarNavAltMarkup class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
 
     <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="home">{{'Home' | uppercase}}</a>
-      <a class="nav-item nav-link" routerLink="about">{{'About' | uppercase}}</a>
-      <a class="nav-item nav-link" routerLink="contact">{{'Contact' | uppercase}}</a>
+      <a class="nav-item nav-link" routerLink="home" (click)="closeMenu(toggleButton)">{{'Home' | uppercase}}</a>
+      <a class="nav-item nav-link" routerLink="about" (click)="closeMenu(toggleButton)">{{'About' | uppercase}}</a>
+      <a class="nav-item nav-link" routerLink="contact" (click)="closeMenu(toggleButton)">{{'Contact' | uppercase}}</a>
     </div>
   </div>
 </nav>

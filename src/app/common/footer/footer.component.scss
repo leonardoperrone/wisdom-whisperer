@@ -3,12 +3,12 @@
 footer {
   background: $primary-color;
   color: #fff;
-  height: 50px ;
+  height: 50px;
   line-height: 10px;
   bottom: 0;
 }
 
-.footer-logos, .footer-text, .footer-credits{
+.footer-logos, .footer-text, .footer-credits {
   vertical-align: middle;
   line-height: 50px;
   text-align: center;
@@ -24,6 +24,7 @@ i.fab {
   padding: .5em;
   width: 2.1em;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .logos {
@@ -31,16 +32,40 @@ i.fab {
   grid-template-columns: repeat(3, 100px);
   justify-content: center;
   margin: 20px 0px;
+
   a {
     color: #fff;
     padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
       opacity: 0.8;
       text-decoration: none;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logos {
+    grid-template-columns: repeat(3, 80px);
+
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+
+  i.fab {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: .7em;
+    width: 2.5em;
+    text-align: center;
+  }
+
+  i.fab.fa-2x {
+    font-size: 1rem;
   }
 }
 

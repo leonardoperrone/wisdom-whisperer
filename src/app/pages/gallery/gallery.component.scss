@@ -180,20 +180,93 @@ mat-progress-spinner, .loader-text {
 }
 
 @media screen and (max-width: 768px) {
+  .grid-main {
+    margin: 0 0 100px;
+    grid-row-gap: 15px;
+  }
+
+  .header {
+    margin-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .header-quote {
+    top: 44%;
+  }
   .grid-pic-gallery {
     padding-top: 10px;
     grid-template-columns: 1fr;
     grid-gap: 15px;
     margin-right: 15px;
     margin-left: 15px;
+    margin-bottom: 100px;
   }
+
+  .header-gallery {
+    padding-bottom: 65px;
+    padding-top: 65px;
+  }
+
+  .image-description {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+
+  .title, .title-home, .quote {
+    letter-spacing: 0;
+    font-size: 20px;
+  }
+
+  .title-home {
+    font-size: 34px;
+  }
+
   .column {
     font-size: 35px;
+
+    img {
+      width: 100%;
+
+      &.banner-image:hover {
+        opacity: 1;
+      }
+    }
   }
+
 }
 
 @media screen and (max-width: 425px) {
-  .column {
+  .title-home {
+    padding-top: 100px;
+    letter-spacing: 0;
     font-size: 25px;
+  }
+  .column {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    font-size: 22px;
+  }
+  i.fas.fa-chevron-circle-down.fa-3x {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .column {
+    font-size: 38px;
+  }
+  .header-quote {
+    top: 50%;
+  }
+  .header-quote-container .fa-chevron-circle-down {
+    bottom: 32%
+  }
+  .quote {
+    font-size: 28px;
   }
 }

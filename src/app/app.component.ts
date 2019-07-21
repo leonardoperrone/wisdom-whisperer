@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -6,7 +6,8 @@ import { Component, HostListener } from '@angular/core';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    title = 'app';
+    @ViewChild('navbarNavAltMarkup') navbarNavAltMarkup: ElementRef;
+
     public showMenu = false;
     public isNavOpen = false;
     public innerWidth: any;
@@ -15,6 +16,7 @@ export class AppComponent {
     @HostListener('window:scroll', [])
     onWindowScroll() {
         const myNav = document.getElementById('mynav');
+        this.innerWidth = window.innerWidth;
         if (window.scrollY >= 50 && this.innerWidth > 768) {
             myNav.classList.add('nav-link-small');
             myNav.classList.remove('nav-large');
@@ -46,5 +48,11 @@ export class AppComponent {
 
     }
 
+    public closeMenu(element: HTMLButtonElement) {
+        if (this.innerWidth <= 768) {
+            this.toggleMenu(element);
+            this.navbarNavAltMarkup.nativeElement.classList.remove('show');
+        }
+    }
 
 }
