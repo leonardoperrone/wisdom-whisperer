@@ -10,7 +10,6 @@
           <br>
           this is my journey.
         </h2>
-        <h2 class="quote" [ngStyle]="{fontSize: '40px',width:'100%', paddingTop: '30px'}"> !! NOTE: pictures update coming soon !!</h2>
       </div>
       <a (click)="goToTravel()" *ngIf="isChevron" id="chevron-down"><i class="fas fa-chevron-circle-down fa-3x"></i></a>
     </div>
@@ -33,7 +32,7 @@
       <ng-container *ngIf="selectedCountry!=='TRAVELS'">
         <!--<img [src]="i.url" (click)="openModal('custom-modal-2', i)">-->
         <img (click)="openModal(i.index)" [src]="i.urlThumbnailPic" class="banner-image" alt="thumbnail-pic">
-        <p class="image-description"> {{i.description}}</p>
+<!--        <p class="image-description"> {{i.description}}</p>-->
       </ng-container>
       <ng-container *ngIf="selectedCountry==='TRAVELS'">
         <img [routerLink]="['/home', i.countryRep]" [src]="i.urlMainPic" class="banner-image" id="img-gallery" alt="country-pic">
