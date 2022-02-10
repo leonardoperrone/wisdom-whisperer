@@ -36,7 +36,7 @@
     "firebase-functions": "^2.1.0",
     "lodash": "^4.17.15",
     "ngx-toastr": "^9.1.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "nodemailer": "^4.6.8",
     "request": "2.88.0",
     "rxjs": "^6.2.2",
